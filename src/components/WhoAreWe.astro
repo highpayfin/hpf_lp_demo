@@ -1,0 +1,86 @@
+---
+import { getI18nData, type SupportedLang } from '../utils/i18n';
+interface Props {
+  lang?: SupportedLang;
+}
+const { lang = 'en' } = Astro.props;
+const whoAreWeData = getI18nData(lang, 'who-are-we');
+// Section: WhoAreWe
+
+
+const {
+  enabled = true,
+  title = "Who are we",
+  subtitle = "High Pay Fin is a payment provider for accepting Russian rubles (RUB) in international business.\n\nWe build payment infrastructure that enables companies outside Russia to legally accept payments from clients in the Russian Federation.",
+  cards = []
+} = whoAreWeData;
+---
+
+{enabled !== false && (
+  <section class="block block-who-are-we" gsap-fade>
+  <div class="container">
+    <div class="wrapper">
+      <div class="content">
+        <div class="title-block desktop">
+          <h2 class="title"><p>{title}</p></h2>
+          <div class="text-large description">
+            {subtitle.split('\n\n').map(paragraph => (
+              <p set:html={paragraph.replace(/\n/g, '<br />')} />
+            ))}
+          </div>
+        </div>
+        <div class="title-block mobile">
+          <h2 class="title"><p>{title}</p></h2>
+          <div class="text-large description">
+            {subtitle.split('\n\n').map(paragraph => (
+              <p set:html={paragraph.replace(/\n/g, '<br />')} />
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div class="info-cards desktop">
+        {cards.map((c, idx) => (
+          <div class={`info-card info-card-${idx + 1}`}>
+            {idx !== 1 && (
+              <div class="info-card__icon">
+                <div class="info-card__icon-blur"></div>
+                <div class="info-card__icon-image"><img src={c.icon} alt={c.title}></div>
+              </div>
+            )}
+            <h3 class="h3 info-card__title"><p set:html={c.title.replace(/\n/g, '<br />')} /></h3>
+            <div class="info-card__text"><p set:html={c.text.replace(/\n/g, '<br />')} /></div>
+            {idx === 1 && (
+              <div class="info-card__icon info-card__icon_bottom">
+                <div class="info-card__icon-blur"></div>
+                <div class="info-card__icon-image"><img src={c.icon} alt={c.title}></div>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+
+      <div class="info-cards mobile">
+        {cards.map((c, idx) => (
+          <div class="info-card" gsap-card="who-are-we-row">
+            {idx !== 1 && (
+              <div class="info-card__icon">
+                <div class="info-card__icon-blur"></div>
+                <div class="info-card__icon-image"><img src={c.icon} alt={c.title}></div>
+              </div>
+            )}
+            <h3 class="h3 info-card__title"><p set:html={c.title.replace(/\n/g, '<br />')} /></h3>
+            <div class="info-card__text"><p set:html={c.text.replace(/\n/g, '<br />')} /></div>
+            {idx === 1 && (
+              <div class="info-card__icon info-card__icon_bottom">
+                <div class="info-card__icon-blur"></div>
+                <div class="info-card__icon-image"><img src={c.icon} alt={c.title}></div>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+)}

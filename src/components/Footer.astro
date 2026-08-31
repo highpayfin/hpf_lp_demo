@@ -1,0 +1,129 @@
+---
+import { getI18nData, type SupportedLang } from '../utils/i18n';
+interface Props {
+  lang?: SupportedLang;
+}
+const { lang = 'en' } = Astro.props;
+const footerData = getI18nData(lang, 'footer');
+// Section: Footer
+
+
+const {
+  org_name = "High Pay Fin LLC",
+  network_label = "GLOBAL CROSS-BORDER SETTLEMENT NETWORK",
+  copyright = "© 2026. All rights reserved",
+  phone = "+375 (44) 7788879",
+  phone_link = "tel:+375447788879",
+  email = "info@highpayfin.com",
+  telegram_url = "https://t.me/highpayfin",
+  nav_label = "Navigation",
+  doc_label = "Documents",
+  nav_links = [],
+  doc_links = []
+} = footerData;
+---
+<footer class="footer">
+  <div class="footer__top">
+    <div class="container">
+      <a class="logo footer__logo" href="/#title">
+        <img src="/assets/uploads/2026/02/logo.svg" alt="High Pay Fin">
+      </a>
+      <span class="org mobile">{org_name}</span>
+      <span class="copyright mobile">{copyright}</span>
+      
+      <div class="menu-wrapper">
+        <div class="footer__menu">
+          {nav_links && nav_links.length > 0 && (
+            <div class="footer__nav">
+              <ul>
+                <li class="menu-item menu-item-type-custom"><a>{nav_label}</a></li>
+                {nav_links.map((item) => (
+                  <li class="menu-item menu-item-type-custom"><a href={item.url}>{item.title}</a></li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {doc_links && doc_links.length > 0 && (
+            <div class="footer__nav">
+              <ul>
+                <li class="menu-item menu-item-type-custom"><a>{doc_label}</a></li>
+                {doc_links.map((item) => (
+                  <li class="menu-item menu-item-type-custom"><a href={item.url}>{item.title}</a></li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      </div>
+
+      <div class="contacts-wrapper">
+        <div class="footer__contacts">
+          <a class="footer__contact" href={phone_link || `tel:${phone.replace(/\D/g, '')}`}>
+            <span>{phone}</span>
+            <i class="icon">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.2" d="M10.0035 3.40804L1.41153 12L0 10.5885L8.59097 1.99651H1.01922V0H12V10.9808H10.0035V3.40804Z" fill="black"/>
+              </svg>
+            </i>
+          </a>
+          <a class="footer__contact" href={`mailto:${email}`}>
+            <span>{email}</span>
+            <i class="icon">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.2" d="M10.0035 3.40804L1.41153 12L0 10.5885L8.59097 1.99651H1.01922V0H12V10.9808H10.0035V3.40804Z" fill="black"/>
+              </svg>
+            </i>
+          </a>
+        </div>
+        <div class="socials footer__socials">
+          {telegram_url && (
+            <a class="socials__link" href={telegram_url} target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+              <i class="icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.52501 15.5223L9.14455 20.827C9.68889 20.827 9.92465 20.5952 10.2074 20.3169L12.7595 17.8992L18.0477 21.7381C19.0175 22.2739 19.7008 21.9917 19.9625 20.8536L23.4336 4.73033L23.4346 4.72938C23.7422 3.30818 22.9161 2.75244 21.9712 3.10108L1.56778 10.8445C0.175288 11.3803 0.196371 12.1498 1.33107 12.4984L6.5474 14.1068L18.6639 6.59137C19.2341 6.21707 19.7526 6.42417 19.3261 6.79847L9.52501 15.5223Z"/>
+                </svg>
+              </i>
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="network-badge">
+        <svg class="globe-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="2" y1="12" x2="22" y2="12"></line>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+        </svg>
+        <span>{network_label}</span>
+      </div>
+      <span class="org desktop">{org_name}</span>
+      <span class="copyright desktop">{copyright}</span>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer__bottom .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    font-size: 13px;
+    opacity: 0.65;
+  }
+  .network-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+</style>

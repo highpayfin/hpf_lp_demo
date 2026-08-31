@@ -1,0 +1,26 @@
+{
+  "enabled": true,
+  "title": "跨国跨境收付款是否让您倍感困扰？",
+  "description": "海外客户有着强烈的消费和采购需求，但多数出海企业因缺乏合规、自动化且低成本的多币种本地化结账方案而错失商机。",
+  "cta_text": "提交申请",
+  "cards": [
+    {
+      "type": "red",
+      "icon": "/assets/uploads/2026/05/dont-pay-red.svg",
+      "title": "外汇磨损高昂 & 利润严重侵蚀",
+      "text": "传统跨境银行电汇手续费和高额换汇点差，在资金到账前就吞噬了高达 5-8% 的交易货款。"
+    },
+    {
+      "type": "red",
+      "icon": "/assets/uploads/2026/05/dont-pay-red.svg",
+      "title": "SWIFT 流程繁琐 & 掉单拒付频发",
+      "text": "传统中间行清算耗时长达数天，极易引发资金不明冻结与客户弃单，阻碍业务规模扩张。"
+    },
+    {
+      "type": "green",
+      "icon": "/assets/uploads/2026/05/dont-pay-green.svg",
+      "title": "High Pay Fin —\n一站式全球合规解决方案",
+      "text": "支持 50+ 全球主流法币与加密资产收单，内置智能汇率换算与本币即时清算。"
+    }
+  ]
+}

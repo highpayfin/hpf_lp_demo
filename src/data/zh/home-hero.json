@@ -1,0 +1,18 @@
+{
+  "enabled": true,
+  "ticker_titles": [
+    {
+      "title": "轻松接收全球客户的多币种付款"
+    },
+    {
+      "title": "无缝拓展全球跨境贸易与数字业务"
+    },
+    {
+      "title": "合规、透明、高效的跨境资金结算"
+    }
+  ],
+  "brand_suffix": "携手 HighPayFin",
+  "description": "我们协助跨国企业接收来自全球客户的本地货币付款，并以您指定的本地法定货币或稳定币结算至企业账户——完全合法合规、透明无忧。",
+  "cta_text": "接入 HighPayFin",
+  "info_badge": "免费接入 • 支持多币种 • 专为全球业务设计"
+}

@@ -1,0 +1,56 @@
+---
+// Mobile menu drawer
+import { getI18nData, LANGUAGES, type SupportedLang } from '../utils/i18n';
+
+interface Props {
+  lang?: SupportedLang;
+}
+
+const { lang = 'en' } = Astro.props;
+const siteConfig = getI18nData(lang, 'site-config');
+
+const {
+  header_cta_text = "Get a Consultation",
+  menu_items = [
+    { title: "Product", url: "#product" },
+    { title: "How It Works", url: "#whats-work" },
+    { title: "Advantages", url: "#advantages" },
+    { title: "Who It’s For", url: "#for-whom" },
+    { title: "FAQ", url: "#faq" }
+  ]
+} = siteConfig;
+---
+<div class="menu">
+  <div class="menu__wrapper">
+    <div class="container">
+      <div class="menu__content">
+        <div class="h2 menu__nav">
+          <ul>
+            {menu_items.map((item) => (
+              <li class="menu-item menu-item-type-custom">
+                <a href={item.url}>{item.title}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        
+        <div class="mobile-lang-list" style="display: flex; gap: 12px; margin: 20px 0; justify-content: center; flex-wrap: wrap;">
+          {LANGUAGES.map((item) => (
+            <a href={item.path} style={`display: flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 20px; text-decoration: none; font-size: 14px; font-weight: 500; ${item.code === lang ? 'background: #10B981; color: #fff;' : 'background: rgba(0,0,0,0.05); color: inherit;'}`}>
+              <img src={item.flag} alt={item.name} style="width: 18px; height: 12px; object-fit: cover; border-radius: 2px;">
+              <span>{item.name}</span>
+            </a>
+          ))}
+        </div>
+
+        <button class="btn menu__btn" modal="contact-form">
+          <div class="btn__text">
+            <div class="btn__text-up">{header_cta_text}</div>
+            <div class="btn__text-static">{header_cta_text}</div>
+          </div>
+          <div class="btn__bg"></div>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

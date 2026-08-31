@@ -1,0 +1,21 @@
+{
+  "title": "Who are we",
+  "subtitle": "HighPayFin is a licensed global payment provider for accepting multi-currency cross-border transactions in international business.\n\nWe build financial infrastructure that enables enterprises and marketplaces worldwide to legally, securely, and seamlessly accept payments across 50+ fiat currencies and digital assets.",
+  "cards": [
+    {
+      "title": "Licensed Payment Operator",
+      "text": "We operate within strict international regulatory frameworks, holding payment licenses and maintaining direct compliance with global banking standards.",
+      "icon": "/assets/uploads/2026/05/who-are-we-1_white.svg"
+    },
+    {
+      "title": "Direct Multi-Rail Gateway",
+      "text": "Direct connectivity to domestic clearing networks, instant card rails, QR payments, and global banking channels – eliminating unnecessary intermediaries.",
+      "icon": "/assets/uploads/2026/05/who-are-we-2_white.svg"
+    },
+    {
+      "title": "Institutional FX Liquidity",
+      "text": "We specialize in institutional cross-border liquidity and automated treasury management, delivering the tightest FX rates and guaranteed locked pricing.",
+      "icon": "/assets/uploads/2026/05/who-are-we-3_white.svg"
+    }
+  ]
+}

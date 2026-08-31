@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Great+Vibes&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=Alex+Brush&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 757px;
+    height: 100px;
+    background: transparent;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  .container {
+    width: 757px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+  }
+  .emblem-box {
+    width: 120px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .divider {
+    width: 2px;
+    height: 88px;
+    background: #1F2933;
+    margin: 0 22px 0 10px;
+    flex-shrink: 0;
+  }
+  .text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 7px;
+    font-family: 'Playfair Display', 'Cinzel', serif;
+  }
+  .line-1 {
+    font-size: 30px;
+    font-weight: 900;
+    color: #1F2933;
+    letter-spacing: 0.8px;
+    line-height: 1.1;
+  }
+  .line-2 {
+    font-size: 29px;
+    font-weight: 800;
+    color: #1F2933;
+    letter-spacing: 1.8px;
+    line-height: 1.1;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <!-- Ornate Calligraphic Monogram -->
+    <div class="emblem-box">
+      <svg width="110" height="90" viewBox="0 0 110 90" fill="none">
+        <!-- Calligraphic Monogram Paths -->
+        <g stroke="#1F2933" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <!-- Flowing N / S flourishes -->
+          <path d="M15 75C5 75 8 50 30 35C45 25 60 15 75 12C90 9 100 18 95 30C90 42 70 55 45 62C25 68 15 60 20 48C25 35 45 22 65 18"/>
+          <path d="M42 12C45 35 48 65 52 82"/>
+          <path d="M40 18C55 22 85 30 92 45C98 58 85 75 65 75C45 75 35 62 48 45C58 32 78 28 85 28" stroke-width="1.8"/>
+          <!-- Star accent -->
+          <path d="M68 42L70 46H74L71 49L72 53L68 50L64 53L65 49L62 46H66L68 42Z" fill="#1F2933" stroke="none"/>
+        </g>
+      </svg>
+    </div>
+
+    <!-- Divider Line -->
+    <div class="divider"></div>
+
+    <!-- Typography -->
+    <div class="text-box">
+      <div class="line-1">NGÂN HÀNG NHÀ NƯỚC VIỆT NAM</div>
+      <div class="line-2">STATE BANK OF VIETNAM</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+---
+import { getI18nData, type SupportedLang } from '../utils/i18n';
+interface Props {
+  lang?: SupportedLang;
+}
+const { lang = 'en' } = Astro.props;
+const heroData = getI18nData(lang, 'home-hero');
+// Section: Hero
+
+
+const {
+  enabled = true,
+  ticker_titles = [
+    { title: "Accept rubles from clients in Russia worldwide" },
+    { title: "Close deals with Russian clients anywhere in the world" },
+    { title: "Accept payments from Russian clients legally and transparently" }
+  ],
+  brand_suffix = "with High Pay Fin",
+  description = "We help international businesses accept payments from clients in Russia and receive funds in local currency – legally and transparently.",
+  cta_text = "Connect to High Pay Fin",
+  info_badge = "Free setup • No P2P • For international business"
+} = heroData;
+---
+
+{enabled !== false && (
+  <section class="block block-title animation" id="title">
+  <div class="container">
+    <div class="wrapper">
+      <div class="content">
+        <div class="title content__title desktop">
+          <div class="content__title-ticker">
+            {ticker_titles.map((t) => (
+              <h1><p set:html={t.title.replace(/\n/g, '<br />')} /></h1>
+            ))}
+          </div>
+          <h1>{brand_suffix}</h1>
+        </div>
+        <div class="title content__title mobile">
+          <div class="content__title-ticker">
+            {ticker_titles.map((t) => (
+              <h1><p set:html={t.title.replace(/\n/g, '<br />')} /></h1>
+            ))}
+          </div>
+          <h1>{brand_suffix}</h1>
+        </div>
+
+        <div class="text-large content__text desktop">
+          <p set:html={description.replace(/\n/g, '<br />')} />
+        </div>
+        <div class="text-large content__text mobile">
+          <p set:html={description.replace(/\n/g, '<br />')} />
+        </div>
+        
+        <div class="content__btns">
+          <button class="btn btn_second" modal="connect-high-pay-fin">
+            <div class="btn__text">
+              <div class="btn__text-up">{cta_text}</div>
+              <div class="btn__text-static">{cta_text}</div>
+            </div>
+            <div class="btn__bg"></div>
+          </button>
+        </div>
+
+        <div class="content__info desktop">
+          <p>{info_badge}</p>
+        </div>
+        <div class="content__info mobile">
+          <p set:html={info_badge.replace(/•/g, '•<br class="hide-desktop" />')} />
+        </div>
+      </div>
+      <div class="composition">
+        <img class="background" src="/assets/img/block-title-image/bg.webp?ver=1.0.10.2" alt="Background">
+        <img class="card-1-big" src="/assets/img/block-title-image/card-1-big.webp?ver=1.0.10.2" alt="Card 1">
+        <img class="card-1-small" src="/assets/img/block-title-image/card-1-small.webp?ver=1.0.10.2" alt="Card 1 Mobile">
+        <img class="card-2-big" src="/assets/img/block-title-image/card-2-big.webp?ver=1.0.10.2" alt="Card 2">
+        <img class="card-2-small" src="/assets/img/block-title-image/card-2-small.webp?ver=1.0.10.2" alt="Card 2 Mobile">
+        <img class="card-3-big" src="/assets/img/block-title-image/card-3-big.webp?ver=1.0.10.2" alt="Card 3">
+        <img class="card-3-small" src="/assets/img/block-title-image/card-3-small.webp?ver=1.0.10.2" alt="Card 3 Mobile">
+        <img class="card-4-big" src="/assets/img/block-title-image/card-4-big.webp?ver=1.0.10.2" alt="Card 4">
+        <img class="card-4-small" src="/assets/img/block-title-image/card-4-small.webp?ver=1.0.10.2" alt="Card 4 Mobile">
+      </div>
+    </div>
+  </div>
+</section>
+)}

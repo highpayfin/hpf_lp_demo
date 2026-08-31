@@ -1,0 +1,51 @@
+---
+import { getI18nData, type SupportedLang } from '../utils/i18n';
+interface Props {
+  lang?: SupportedLang;
+}
+const { lang = 'en' } = Astro.props;
+const partnersData = getI18nData(lang, 'partners');
+// Section: Partners
+
+const {
+  enabled = true,
+  national_bank_logo = "/assets/uploads/2026/02/bank-rb-full.png",
+  national_bank_text = "Listed in the register of payment service providers of the National Bank of the Republic of Belarus.",
+  partner_logos = []
+} = partnersData;
+---
+
+{enabled !== false && (
+  <section class="block block-partners">
+  <div class="container">
+    <div class="wrapper">
+      <div class="main-partner">
+        <img class="main-partner__logo" src={national_bank_logo} alt="National Bank of Belarus">
+        <div class="main-partner__description"><p>{national_bank_text}</p></div>
+      </div>
+      <div class="marquee">
+        <div class="marquee__wrapper">
+          <div class="marquee__pannel">
+            <div class="partners">
+              {partner_logos.map((logo) => (
+                <a href={logo.url || "#"} target="_blank" rel="noopener noreferrer" class="partner">
+                  <img class="partner__image" src={logo.image} alt={logo.name}>
+                </a>
+              ))}
+            </div>
+          </div>
+          <div class="marquee__pannel marquee__pannel-2">
+            <div class="partners">
+              {partner_logos.map((logo) => (
+                <a href={logo.url || "#"} target="_blank" rel="noopener noreferrer" class="partner">
+                  <img class="partner__image" src={logo.image} alt={logo.name}>
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+)}

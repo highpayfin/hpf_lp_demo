@@ -1,0 +1,74 @@
+---
+import { getI18nData, type SupportedLang } from '../utils/i18n';
+interface Props {
+  lang?: SupportedLang;
+}
+const { lang = 'en' } = Astro.props;
+const whoItsForData = getI18nData(lang, 'who-its-for');
+// Section: WhoItsFor (Tabs)
+
+
+const {
+  enabled = true,
+  tabs = []
+} = whoItsForData;
+---
+
+{enabled !== false && (
+  <section class="block block-for-whom" id="for-whom">
+  <div class="tabs">
+    <div class="tabs-labels-wrapper">
+      <div class="container">
+        <div class="tabs-labels" gsap-fade>
+          <div class="ghost"></div>
+          <div class="hover"></div>
+          {tabs.map((tab, idx) => (
+            <div class={`tabs-labels__item ${idx === 0 ? 'active' : ''}`}>
+              <h5 class="h5 tab-title">{tab.tab_label}</h5>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="tabs-contents">
+        {tabs.map((tab, idx) => (
+          <div class={`tabs-contents__item ${idx === 0 ? 'active' : ''}`}>
+            <div class="block-for-whom__block">
+              <div class="media" gsap-fade>
+                <img class="media__child" src={tab.image_desktop} alt={tab.tab_label}>
+              </div>
+              <div class="content" gsap-fade>
+                <h2 class="title content__title desktop"><p set:html={tab.title.replace(/\n/g, '<br />')} /></h2>
+                <h2 class="title content__title mobile"><p set:html={tab.title.replace(/\n/g, '<br />')} /></h2>
+
+                <div class="content__list desktop">
+                  {tab.features.map((feat) => (
+                    <div class="content__list-item">
+                      <span class="text-large"><p>{feat.title}</p></span>
+                      <span class="text"><p set:html={feat.text.replace(/\n/g, '<br />')} /></span>
+                    </div>
+                  ))}
+                </div>
+
+                <div class="content__list mobile">
+                  {tab.features.map((feat) => (
+                    <div class="content__list-item">
+                      <span class="text-large"><p>{feat.title}</p></span>
+                      <span class="text"><p set:html={feat.text.replace(/\n/g, '<br />')} /></span>
+                    </div>
+                  ))}
+                </div>
+
+                <div class="content__media">
+                  <img class="content__media-child" src={tab.image_mobile || tab.image_desktop} alt={tab.tab_label}>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+)}

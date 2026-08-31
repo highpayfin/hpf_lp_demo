@@ -1,0 +1,26 @@
+{
+  "enabled": true,
+  "title": "Unified multi-currency payment infrastructure for global business",
+  "client_cards": [
+    {
+      "title": "Global Clients",
+      "subtitle": ""
+    },
+    {
+      "title": "Multi Currencies (VND/KRW/USD/...)",
+      "subtitle": ""
+    },
+    {
+      "title": "Cards & Bank Transfers",
+      "subtitle": ""
+    },
+    {
+      "title": "Instant QR & APMs",
+      "subtitle": ""
+    }
+  ],
+  "provider_title": "HighPayFin - Payment Provider",
+  "provider_tags": "Global Acquiring • Multi-Currency FX • Compliance & AML • Instant Settlement",
+  "business_title": "International Business",
+  "settlement_title": "Successful Settlement"
+}

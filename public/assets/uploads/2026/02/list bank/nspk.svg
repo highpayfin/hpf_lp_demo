@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="132" height="80" viewBox="0 0 132 80" fill="none">
+  <g transform="translate(8, 20)">
+    <!-- NAPAS Emblem -->
+    <g transform="translate(4, 3)">
+      <path d="M0 14L10 2L18 10L8 22L0 14Z" fill="#1F2933"/>
+      <path d="M12 26L22 14L30 22L20 34L12 26Z" fill="#52606D"/>
+    </g>
+    <!-- NAPAS Text -->
+    <text x="36" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Arial Black', sans-serif" font-size="22" font-weight="900" font-style="italic" letter-spacing="-0.8px" fill="#1F2933">napas</text>
+    <text x="37" y="37" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="6.5" font-weight="700" letter-spacing="0.8px" fill="#52606D">NATIONAL PAYMENT SERVICES</text>
+  </g>
+</svg>

@@ -1,0 +1,42 @@
+{
+  "enabled": true,
+  "national_bank_logo": "/assets/uploads/2026/02/bank-rb-full.png",
+  "national_bank_text": "Tổ chức thanh toán đa tiền tệ được cấp phép và quản lý, kết nối trực tiếp với mạng lưới ngân hàng Tier-1 tại Châu Á & Toàn cầu.",
+  "partner_logos": [
+    {
+      "name": "Vietcombank",
+      "image": "/assets/uploads/2026/02/bank-rb_second.svg",
+      "url": "#"
+    },
+    {
+      "name": "NAPAS",
+      "image": "/assets/uploads/2026/02/nspk.svg",
+      "url": "#"
+    },
+    {
+      "name": "Shinhan Bank",
+      "image": "/assets/uploads/2026/02/statusbank.svg",
+      "url": "#"
+    },
+    {
+      "name": "VietQR",
+      "image": "/assets/uploads/2026/02/mir.svg",
+      "url": "#"
+    },
+    {
+      "name": "KB Kookmin Bank",
+      "image": "/assets/uploads/2026/02/severgazbank.svg",
+      "url": "#"
+    },
+    {
+      "name": "Techcombank",
+      "image": "/assets/uploads/2026/02/messenger-pigeon.svg",
+      "url": "#"
+    },
+    {
+      "name": "Hana Bank",
+      "image": "/assets/uploads/2026/02/sbp.svg",
+      "url": "#"
+    }
+  ]
+}

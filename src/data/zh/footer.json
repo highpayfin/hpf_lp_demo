@@ -1,0 +1,34 @@
+{
+  "network_label": "全球多币种跨境资金结算网络",
+  "org_name": "High Pay Fin LLC",
+  "copyright": "© 2026. 版权所有",
+  "phone_link": "tel:+375447788879",
+  "phone": "+375 (44) 7788879",
+  "telegram_url": "https://t.me/highpayfin",
+  "doc_links": [],
+  "email": "info@highpayfin.com",
+  "nav_links": [
+    {
+      "title": "产品介绍",
+      "url": "/zh/#product"
+    },
+    {
+      "title": "运作方式",
+      "url": "/zh/#whats-work"
+    },
+    {
+      "title": "核心优势",
+      "url": "/zh/#advantages"
+    },
+    {
+      "title": "适用群体",
+      "url": "/zh/#for-whom"
+    },
+    {
+      "title": "常见问题",
+      "url": "/zh/#faq"
+    }
+  ],
+  "nav_label": "网站导航",
+  "doc_label": "相关文件"
+}

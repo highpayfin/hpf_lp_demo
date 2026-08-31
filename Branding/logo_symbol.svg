@@ -1,0 +1,24 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- HighPayFin App Icon / Favicon -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E2738" />
+      <stop offset="100%" stop-color="#0F141E" />
+    </linearGradient>
+    <linearGradient id="iconTealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00FFA8" />
+      <stop offset="100%" stop-color="#00C48C" />
+    </linearGradient>
+  </defs>
+
+  <!-- Squircle Container -->
+  <rect width="128" height="128" rx="28" fill="url(#bgGrad)" />
+  <rect x="1" y="1" width="126" height="126" rx="27" stroke="#334155" stroke-width="1.5" />
+
+  <!-- Centered H Monogram -->
+  <g transform="translate(36, 32)">
+    <rect x="0" y="4" width="16" height="56" rx="8" fill="url(#iconTealGrad)" />
+    <rect x="40" y="4" width="16" height="56" rx="8" fill="url(#iconTealGrad)" />
+    <path d="M0 32 C0 24 20 24 28 32 C36 40 56 40 56 32" stroke="url(#iconTealGrad)" stroke-width="16" stroke-linecap="round" />
+  </g>
+</svg>

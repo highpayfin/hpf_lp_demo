@@ -1,0 +1,67 @@
+---
+import { getI18nData, type SupportedLang } from '../utils/i18n';
+interface Props {
+  lang?: SupportedLang;
+}
+const { lang = 'en' } = Astro.props;
+const howItWorksData = getI18nData(lang, 'how-it-works');
+// Section: HowItWorks
+
+
+const {
+  enabled = true,
+  title = "How it works",
+  subtitle = "From invoicing to settlement – a few minutes",
+  steps = [],
+  notice_desktop = "The exchange rate is locked for 15 minutes: the client pays exactly the amount shown on screen",
+  notice_mobile = "The exchange rate is locked for 15 minutes. This protects the deal from sharp fluctuations"
+} = howItWorksData;
+---
+
+{enabled !== false && (
+  <section class="block block-whats-work" id="whats-work">
+  <div class="container">
+    <div class="title-block title-block_centered desktop" gsap-fade>
+      <h2 class="title"><p>{title}</p></h2>
+      <div class="text-large description"><p>{subtitle}</p></div>
+    </div>
+    <div class="title-block title-block_centered mobile" gsap-fade>
+      <h2 class="title"><p set:html={title.replace(/\n/g, '<br />')} /></h2>
+      <div class="text-large description"><p>{subtitle}</p></div>
+    </div>
+
+    <div class="steps desktop" gsap-fade>
+      {steps.map((step) => (
+        <div class="step">
+          <div class="step__label">{step.step_label}</div>
+          <img class="step__image" src={step.image_desktop} alt={step.title}>
+          <div class="step__title-wrapper">
+            <h5 class="h5 step__title"><p>{step.title}</p></h5>
+          </div>
+          <div class="step__text"><p set:html={step.description.replace(/\n/g, '<br />')} /></div>
+        </div>
+      ))}
+    </div>
+
+    <div class="steps mobile">
+      {steps.map((step) => (
+        <div class="step" gsap-card="whats-work-row-1">
+          <div class="step__label">{step.step_label}</div>
+          <img class="step__image" src={step.image_mobile || step.image_desktop} alt={step.title}>
+          <div class="step__title-wrapper">
+            <h5 class="h5 step__title"><p>{step.title}</p></h5>
+          </div>
+          <div class="step__text"><p set:html={step.description.replace(/\n/g, '<br />')} /></div>
+        </div>
+      ))}
+    </div>
+
+    <div class="notice desktop" gsap-card="whats-work-row-3">
+      <div class="text-large notice__text"><p set:html={notice_desktop.replace(/\n/g, '<br />')} /></div>
+    </div>
+    <div class="notice mobile" gsap-card="whats-work-row-4">
+      <div class="text-large notice__text"><p set:html={notice_mobile.replace(/\n/g, '<br />')} /></div>
+    </div>
+  </div>
+</section>
+)}

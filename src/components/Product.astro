@@ -1,0 +1,154 @@
+---
+import { getI18nData, type SupportedLang } from '../utils/i18n';
+interface Props {
+  lang?: SupportedLang;
+}
+const { lang = 'en' } = Astro.props;
+const productData = getI18nData(lang, 'product');
+// Section: Product / Payment Infrastructure
+
+
+const {
+  enabled = true,
+  title = "Unified multi-currency payment infrastructure for global business",
+  client_cards = [
+    { title: "Global Clients" },
+    { title: "50+ Fiat Currencies & Crypto" },
+    { title: "Local Bank Transfers & Cards" },
+    { title: "Instant QR & APMs" }
+  ],
+  provider_title = "High Pay Fin - Payment Provider",
+  provider_tags = "Global Acquiring • Multi-Currency FX • Compliance & AML • Instant Settlement",
+  business_title = "International Business",
+  settlement_title = "Successful Settlement"
+} = productData;
+---
+
+{enabled !== false && (
+  <section class="block block-payment-infrastructure" id="product">
+  <div class="container">
+    <div class="title-block title-block_centered desktop">
+      <h2 class="title"><p>{title}</p></h2>
+    </div>
+    <div class="title-block title-block_centered mobile">
+      <h2 class="title"><p set:html={title.replace(/\s+for\s+/i, '<br />for ')} /></h2>
+    </div>
+
+    <div class="payment__parent">
+      <div class="payment__child left">
+        <div class="possibilities possibilities-1">
+          <div class="possibility">
+            <img class="possibility__image" src="/assets/uploads/2026/05/possibilities-1.svg" alt="Global Clients">
+            <div class="possibility__name"><p set:html={client_cards[0]?.title.replace(/\n/g, '<br />')} /></div>
+          </div>
+        </div>
+        <div class="possibilities possibilities-2">
+          <div class="possibility">
+            <img class="possibility__image" src="/assets/uploads/2026/05/possibilities-2.svg" alt="Multi-Currency">
+            <div class="possibility__name"><p set:html={client_cards[1]?.title.replace(/\n/g, '<br />')} /></div>
+          </div>
+          <div class="possibility">
+            <img class="possibility__image" src="/assets/uploads/2026/05/possibilities-3.svg" alt="Bank Transfers">
+            <div class="possibility__name"><p set:html={client_cards[2]?.title.replace(/\n/g, '<br />')} /></div>
+          </div>
+        </div>
+        <div class="possibilities possibilities-3">
+          <div class="possibility">
+            <img class="possibility__image" src="/assets/uploads/2026/05/possibilities-4.svg" alt="Instant QR">
+            <div class="possibility__name"><p set:html={client_cards[3]?.title.replace(/\n/g, '<br />')} /></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="payment__child center">
+        <div class="logo-block">
+          <div class="logo-block__image desktop">
+            <svg width="593" height="200" viewBox="0 0 593 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.5 42.5H17C24.732 42.5 31 48.768 31 56.5V74.176C31 77.9797 32.0847 81.7045 34.1268 84.9135L38 91M1 139.5H17C24.732 139.5 31 133.232 31 125.5V107.304C31 103.201 32.2622 99.1969 34.6154 95.8352L38 91M38 91H207.5" stroke="#1F2933" stroke-opacity="0.1" stroke-width="2" stroke-linecap="round"/>
+              <path d="M353 117H592" stroke="#1F2933" stroke-opacity="0.1" stroke-width="2" stroke-linecap="round"/>
+              <g filter="url(#filter0_d_2014_440)">
+                <rect x="206.5" y="19" width="150" height="150" rx="40" fill="#1F2933" shape-rendering="crispEdges"/>
+                <rect x="206.5" y="19" width="150" height="150" rx="40" fill="url(#paint0_linear_2014_440)" shape-rendering="crispEdges"/>
+                <rect x="206.5" y="19" width="150" height="150" rx="40" fill="#10B981" shape-rendering="crispEdges"/>
+                <!-- HighPayFin H Monogram Symbol -->
+                <g transform="translate(247.9, 55.6) scale(1.2)">
+                  <rect x="0" y="4" width="16" height="56" rx="8" fill="white" />
+                  <rect x="40" y="4" width="16" height="56" rx="8" fill="white" />
+                  <path d="M0 32 C0 24 20 24 28 32 C36 40 56 40 56 32" stroke="white" stroke-width="16" stroke-linecap="round" />
+                </g>
+              </g>
+              <defs>
+                <filter id="filter0_d_2014_440" x="181.5" y="0" width="200" height="200" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                  <feOffset dy="6"/>
+                  <feGaussianBlur stdDeviation="12.5"/>
+                  <feComposite in2="hardAlpha" operator="out"/>
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2014_440"/>
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2014_440" result="shape"/>
+                </filter>
+                <linearGradient id="paint0_linear_2014_440" x1="572.036" y1="-57.4083" x2="261.224" y2="294.376" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#10B981"/>
+                  <stop offset="1" stop-color="#A7F3D0"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="logo-block__image mobile">
+            <svg width="100" height="137" viewBox="0 0 100 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M74 0.75L74 8.5C74 12.366 70.866 15.5 67 15.5L58.162 15.5C56.2602 15.5 54.3978 16.0423 52.7933 17.0634L49.75 19M25.5 0.499998L25.5 8.5C25.5 12.366 28.634 15.5 32.5 15.5L41.5978 15.5C43.6495 15.5 45.6516 16.1311 47.3324 17.3077L49.75 19M49.75 19L49.75 117.75" stroke="#1F2933" stroke-opacity="0.1" stroke-linecap="round"/>
+              <g filter="url(#filter0_d_2010_769)">
+                <rect x="12.5" y="46.4648" width="75" height="75" rx="20" fill="#1F2933" shape-rendering="crispEdges"/>
+                <rect x="12.5" y="46.4648" width="75" height="75" rx="20" fill="url(#paint0_linear_2010_769)" shape-rendering="crispEdges"/>
+                <rect x="12.5" y="46.4648" width="75" height="75" rx="20" fill="#10B981" shape-rendering="crispEdges"/>
+                <!-- HighPayFin H Monogram Symbol Mobile -->
+                <g transform="translate(33.2, 64.8) scale(0.6)">
+                  <rect x="0" y="4" width="16" height="56" rx="8" fill="white" />
+                  <rect x="40" y="4" width="16" height="56" rx="8" fill="white" />
+                  <path d="M0 32 C0 24 20 24 28 32 C36 40 56 40 56 32" stroke="white" stroke-width="16" stroke-linecap="round" />
+                </g>
+              </g>
+              <defs>
+                <filter id="filter0_d_2010_769" x="0" y="36.9648" width="100" height="100" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                  <feOffset dy="3"/>
+                  <feGaussianBlur stdDeviation="6.25"/>
+                  <feComposite in2="hardAlpha" operator="out"/>
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2010_769"/>
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2010_769" result="shape"/>
+                </filter>
+                <linearGradient id="paint0_linear_2010_769" x1="195.268" y1="8.26069" x2="39.8618" y2="184.153" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#10B981"/>
+                  <stop offset="1" stop-color="#A7F3D0"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <h4 class="h4 logo-block__title"><p set:html={provider_title.replace(/\s*-\s*/, ' -<br />')} /></h4>
+          <div class="logo-block__text"><p>{provider_tags}</p></div>
+        </div>
+      </div>
+
+      <div class="payment__child right">
+        <div class="merchant-card">
+          <img class="merchant-card__image" src="/assets/uploads/2026/05/merchant-1_white.png" alt="Merchant">
+          <h5 class="h5 merchant-card__title"><p set:html={business_title.replace(/\n/g, '<br />')} /></h5>
+        </div>
+        <div class="transaction-card">
+          <div class="transaction-card__image">
+            <svg class="icon-success" width="100%" height="98" viewBox="0 0 97 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.018 23.6501C14.9618 16.2428 21.964 10.4431 30.161 6.96406C38.3589 3.48506 47.395 2.47916 56.157 4.06996C64.919 5.66076 73.025 9.77886 79.477 15.918C85.9287 22.0566 90.445 29.948 92.47 38.62C94.494 47.2924 93.939 56.368 90.872 64.728C87.805 73.088 82.36 80.37 75.208 85.676C68.0557 90.982 59.508 94.081 50.617 94.592C41.7261 95.102 32.88 93.001 25.168 88.549M45.048 94.405C36.1934 93.83 27.7 90.677 20.614 85.337C13.528 79.996 8.15798 72.7 5.16598 64.347C2.17398 55.994 1.68858 46.947 3.77128 38.322C5.85398 29.697 10.4134 21.868 16.8883 15.801C23.363 9.73356 31.4703 5.69196 40.2123 4.17296C48.9547 2.65426 57.9503 3.72496 66.0923 7.25326C74.234 10.7815 81.1663 16.6134 86.0363 24.0313C90.9053 31.449 93.5003 40.1283 93.5003 49.0023" stroke="#10B981" stroke-width="5"/>
+              <path d="M10.0179 23.65C14.9617 16.2428 21.9639 10.443 30.1609 6.96402C38.3588 3.48502 47.3949 2.47902 56.1569 4.06982C64.9189 5.66062 73.0249 9.77882 79.4769 15.9178C85.9286 22.0564 90.4449 29.9478 92.4699 38.6198C94.4939 47.2922 93.9389 56.3668 90.8719 64.7278C87.8049 73.0886 82.3599 80.3698 75.2079 85.6758C68.0556 90.9818 59.5079 94.0798 50.6169 94.5908C41.726 95.1008 32.8799 93.0008 25.1679 88.5478" stroke="#FFF" stroke-width="6"/>
+              <path class="check-mark" d="M70.219 37L44.063 63.156L42.0005 65.3123L27.8445 51.1563L25.6882 49.0001L30.0007 44.7813L32.0632 46.9376L42.0007 56.7813L63.8447 34.9373L66.0009 32.781L70.219 37Z" fill="#10B981"/>
+            </svg>
+          </div>
+          <h5 class="h5 transaction-card__title"><p set:html={settlement_title.replace(/\n/g, '<br />')} /></h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+)}

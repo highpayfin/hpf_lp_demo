@@ -1,0 +1,42 @@
+{
+  "enabled": true,
+  "national_bank_logo": "/assets/uploads/2026/02/bank-rb-full.png",
+  "national_bank_text": "아시아 및 글로벌 티어-1(Tier-1) 은행 결제망과 직결된 인허가 기반 다중 통화 결제 인프라.",
+  "partner_logos": [
+    {
+      "name": "Vietcombank",
+      "image": "/assets/uploads/2026/02/bank-rb_second.svg",
+      "url": "#"
+    },
+    {
+      "name": "NAPAS",
+      "image": "/assets/uploads/2026/02/nspk.svg",
+      "url": "#"
+    },
+    {
+      "name": "Shinhan Bank",
+      "image": "/assets/uploads/2026/02/statusbank.svg",
+      "url": "#"
+    },
+    {
+      "name": "VietQR",
+      "image": "/assets/uploads/2026/02/mir.svg",
+      "url": "#"
+    },
+    {
+      "name": "KB Kookmin Bank",
+      "image": "/assets/uploads/2026/02/severgazbank.svg",
+      "url": "#"
+    },
+    {
+      "name": "Techcombank",
+      "image": "/assets/uploads/2026/02/messenger-pigeon.svg",
+      "url": "#"
+    },
+    {
+      "name": "Hana Bank",
+      "image": "/assets/uploads/2026/02/sbp.svg",
+      "url": "#"
+    }
+  ]
+}

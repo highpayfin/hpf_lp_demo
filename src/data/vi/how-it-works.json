@@ -1,0 +1,30 @@
+{
+  "enabled": true,
+  "title": "Cách thức hoạt động",
+  "subtitle": "Từ tạo hóa đơn đa tiền tệ đến quyết toán nội địa – chỉ trong vài phút",
+  "steps": [
+    {
+      "step_label": "Bước 1",
+      "image_desktop": "/assets/uploads/2026/07/step-1_white.png",
+      "image_mobile": "/assets/uploads/2026/07/step-1_white_mobile.png",
+      "title": "Doanh nghiệp tạo hóa đơn đa tiền tệ",
+      "description": "Trên bảng điều khiển, bạn nhập số tiền mong muốn nhận – bằng VND, KRW, THB, AED hoặc các loại tiền tệ khác. Hệ thống sẽ tự động tạo ngay link thanh toán động và mã QR."
+    },
+    {
+      "step_label": "Bước 2",
+      "image_desktop": "/assets/uploads/2026/07/step-2_white.png",
+      "image_mobile": "/assets/uploads/2026/07/step-2_white_mobile.png",
+      "title": "Khách hàng thanh toán bằng nội tệ",
+      "description": "Khách hàng thanh toán dễ dàng bằng đồng tiền bản địa của họ qua ứng dụng ngân hàng, thẻ, mã QR hoặc chuyển khoản nội địa mà không gặp bất kỳ rào cản nào."
+    },
+    {
+      "step_label": "Bước 3",
+      "image_desktop": "/assets/uploads/2026/07/step-3_white.png",
+      "image_mobile": "/assets/uploads/2026/07/step-3_white_mobile.png",
+      "title": "Bạn nhận quyết toán tức thì",
+      "description": "Tiền được ghi có vào tài khoản của bạn ngay sau khi thanh toán thành công và quyết toán sang loại tiền bạn mong muốn (VND, KRW, USDT...) theo quy tắc quản trị của bạn."
+    }
+  ],
+  "notice_desktop": "Tỷ giá được khóa cố định trong 30 phút: khách hàng thanh toán chính xác số tiền hiển thị trên màn hình với rủi ro biến động tỷ giá bằng 0",
+  "notice_mobile": "Tỷ giá được khóa cố định trong 30 phút. Giúp bảo vệ giao dịch của bạn khỏi biến động thị trường"
+}

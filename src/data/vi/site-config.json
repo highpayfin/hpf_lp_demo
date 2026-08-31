@@ -1,0 +1,32 @@
+{
+  "menu_items": [
+    {
+      "title": "Sản phẩm",
+      "url": "/vi/#product"
+    },
+    {
+      "title": "Cách hoạt động",
+      "url": "/vi/#whats-work"
+    },
+    {
+      "title": "Ưu điểm",
+      "url": "/vi/#advantages"
+    },
+    {
+      "title": "Khách hàng",
+      "url": "/vi/#for-whom"
+    },
+    {
+      "title": "FAQ",
+      "url": "/vi/#faq"
+    }
+  ],
+  "meta_description": "Giải pháp thanh toán đa tiền tệ toàn cầu cho doanh nghiệp quốc tế. Chấp nhận hơn 50 loại tiền tệ và tài sản số, quyết toán tức thì, phí thấp và tuân thủ pháp lý.",
+  "site_name": "High Pay Fin",
+  "phone_link": " ",
+  "phone": " ",
+  "header_cta_text": "Nhận Tư Vấn",
+  "telegram_url": "https://t.me/highpayfin",
+  "email": "info@highpayfin.com",
+  "meta_title": "High Pay Fin - Hạ Tầng Thanh Toán Đa Tiền Tệ Toàn Cầu"
+}

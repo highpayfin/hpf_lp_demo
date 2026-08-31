@@ -1,0 +1,18 @@
+{
+  "enabled": true,
+  "ticker_titles": [
+    {
+      "title": "Accept multi global currencies from clients worldwide"
+    },
+    {
+      "title": "Close cross-border deals\nin any currency seamlessly"
+    },
+    {
+      "title": "Accept international payments\nlegally and transparently"
+    }
+  ],
+  "brand_suffix": "with HighPayFin",
+  "description": "We help international businesses accept multi-currency payments from global clients and receive settlements in their preferred local currency or stablecoins – legally and transparently.",
+  "cta_text": "Connect to HighPayFin",
+  "info_badge": "Free setup • Major currencies • For global business"
+}

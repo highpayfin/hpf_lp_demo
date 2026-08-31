@@ -1,0 +1,45 @@
+{
+  "title": "Frequently Asked Questions",
+  "questions": [
+    {
+      "question": "How long does the merchant setup take?",
+      "answer": "Usually setup and KYC verification takes no more than 24 hours after providing corporate documents.\nWe make the onboarding fast and transparent — sign the agreement, configure your settlement rules, and start accepting global payments the next day."
+    },
+    {
+      "question": "How does an international customer pay?",
+      "answer": "Customers pay in their home currency through localized payment methods including domestic bank transfers, instant QR codes, debit/credit cards, or digital wallets. No extra app downloads or tedious registrations required."
+    },
+    {
+      "question": "What currencies can I receive settlements in?",
+      "answer": "You can receive payouts in KRW, AED, VND, THB, or USDT — tailored directly to your corporate account preferences. Your customers can pay across many local currencies worldwide."
+    },
+    {
+      "question": "Are there any hidden fees or foreign transaction surcharges?",
+      "answer": "No. All conversion margins are transparently included in the checkout rate. The client sees the exact final price before paying, and your business receives 100% of the invoiced amount with zero surprise deductions."
+    },
+    {
+      "question": "How much does the setup cost?",
+      "answer": "Setup is completely free — zero setup fees, zero monthly subscription fees, and no minimum commitment required. You only pay competitive volume-based transaction rates."
+    },
+    {
+      "question": "Is the payment infrastructure safe and compliant?",
+      "answer": "Yes. All transactions are routed through regulated financial institutions with end-to-end encryption, PCI-DSS Level 1 compliance, and automated AML/anti-fraud screening.\n\nHigh Pay Fin operates strictly within licensed financial frameworks and adheres to global compliance regulations."
+    },
+    {
+      "question": "What documents are required for onboarding?",
+      "answer": "You will need standard corporate registration documents, beneficial owner IDs, proof of business address, and bank account details for settlement. Our team will guide you through the digital onboarding portal."
+    },
+    {
+      "question": "Can I monitor real-time transactions and download financial reports?",
+      "answer": "Yes. Your business dashboard provides real-time transaction streaming, status filters, multi-currency balances, and one-click financial export to CSV or Excel for your accounting and tax teams."
+    },
+    {
+      "question": "What business industries is High Pay Fin suited for?",
+      "answer": "Our solution is universally built for any business with cross-border clientele: e-commerce, software & SaaS, hospitality & travel, real estate, B2B wholesale, luxury services, and digital agencies."
+    },
+    {
+      "question": "How are foreign exchange (FX) rates determined?",
+      "answer": "We source real-time institutional exchange rates from global liquidity providers. The exchange rate is locked for the duration of the payment session, protecting you and your customer from market volatility."
+    }
+  ]
+}

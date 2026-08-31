@@ -1,0 +1,88 @@
+{
+  "enabled": true,
+  "tabs": [
+    {
+      "id": "owners",
+      "tab_label": "For owners",
+      "title": "Full global business control",
+      "image_desktop": "/assets/uploads/2026/02/macbook-1.webp",
+      "image_mobile": "/assets/uploads/2026/02/macbook-1_mobile.webp",
+      "features": [
+        {
+          "title": "Unified multi-currency ledger",
+          "text": "All transactions, payment links, and global receivables unified in one dashboard"
+        },
+        {
+          "title": "Global revenue & FX analytics",
+          "text": "Real-time filters by country, currency pairs, payment methods, and account managers"
+        },
+        {
+          "title": "Automated payout management",
+          "text": "Configure flexible automated payouts to corporate bank accounts or multi-currency wallets"
+        },
+        {
+          "title": "Audit-ready reporting export",
+          "text": "Instant XLS and CSV statements tailored for international accounting and audits"
+        },
+        {
+          "title": "Granular roles and permissions",
+          "text": "Safely delegate invoice generation to sales teams while protecting treasury controls"
+        },
+        {
+          "title": "Comprehensive payer verification",
+          "text": "Full payer identity and compliance metadata available for every completed payment"
+        }
+      ]
+    },
+    {
+      "id": "managers",
+      "tab_label": "For managers",
+      "title": "Invoices that\nclose deals faster",
+      "image_desktop": "/assets/uploads/2026/02/macbook-2.webp",
+      "image_mobile": "/assets/uploads/2026/02/macbook-2_mobile.webp",
+      "features": [
+        {
+          "title": "10-Second payment link & QR generation",
+          "text": "Invoices generated in seconds in the customer's local currency – no hardware needed"
+        },
+        {
+          "title": "Complete real-time deal tracking",
+          "text": "Live payment statuses: pending / paid / expired – never lose track of a customer"
+        },
+        {
+          "title": "Instant settlement confirmations",
+          "text": "Sales managers see instant confirmation alerts the second a client completes checkout"
+        },
+        {
+          "title": "Seamless for high-volume customer flow",
+          "text": "Ideal for retail, hospitality, consulting, agencies, car rentals, and luxury services"
+        }
+      ]
+    },
+    {
+      "id": "clients",
+      "tab_label": "For clients",
+      "title": "Effortless, local checkout experience",
+      "image_desktop": "/assets/uploads/2026/02/iphone-1.webp",
+      "image_mobile": "/assets/uploads/2026/02/iphone-1_mobile.webp",
+      "features": [
+        {
+          "title": "Pay in familiar local currency",
+          "text": "Customers pay in their home currency using their everyday banking apps or debit/credit cards."
+        },
+        {
+          "title": "No extra fees or hidden charges",
+          "text": "Transparent pricing with locked exchange rates – zero surprises on bank statements."
+        },
+        {
+          "title": "Payment completed in seconds",
+          "text": "Scan QR or click link → confirm with biometric/bank authentication → done."
+        },
+        {
+          "title": "Instant digital receipts",
+          "text": "The verified “Paid” screen with digital transaction receipt appears instantly."
+        }
+      ]
+    }
+  ]
+}

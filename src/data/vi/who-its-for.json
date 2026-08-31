@@ -1,0 +1,88 @@
+{
+  "enabled": true,
+  "tabs": [
+    {
+      "id": "owners",
+      "tab_label": "Dành cho chủ doanh nghiệp",
+      "title": "Kiểm soát toàn diện hoạt động kinh doanh quốc tế",
+      "image_desktop": "/assets/uploads/2026/02/macbook-1.webp",
+      "image_mobile": "/assets/uploads/2026/02/macbook-1_mobile.webp",
+      "features": [
+        {
+          "title": "Sổ cái đa tiền tệ hợp nhất",
+          "text": "Tất cả các giao dịch, link thanh toán và khoản phải thu toàn cầu hiển thị trên một màn hình duy nhất"
+        },
+        {
+          "title": "Phân tích doanh thu & ngoại hối toàn cầu",
+          "text": "Bộ lọc thời gian thực theo quốc gia, cặp tiền tệ, phương thức thanh toán và chuyên viên phụ trách"
+        },
+        {
+          "title": "Quản lý quyết toán tự động",
+          "text": "Cài đặt chuyển tiền tự động linh hoạt về tài khoản ngân hàng doanh nghiệp hoặc ví đa tiền tệ"
+        },
+        {
+          "title": "Xuất báo cáo chuẩn kiểm toán",
+          "text": "Xuất bảng kê XLS và CSV tức thì phục vụ báo cáo tài chính, kế toán và kiểm toán quốc tế"
+        },
+        {
+          "title": "Phân quyền chi tiết cho nhân viên",
+          "text": "Ủy quyền an toàn cho đội ngũ kinh doanh tạo hóa đơn trong khi vẫn bảo vệ quyền quản trị dòng tiền"
+        },
+        {
+          "title": "Xác minh người thanh toán đầy đủ",
+          "text": "Lưu trữ đầy đủ thông tin danh tính và dữ liệu tuân thủ cho từng giao dịch hoàn tất"
+        }
+      ]
+    },
+    {
+      "id": "managers",
+      "tab_label": "Dành cho nhân viên kinh doanh",
+      "title": "Hóa đơn chốt đơn nhanh hơn",
+      "image_desktop": "/assets/uploads/2026/02/macbook-2.webp",
+      "image_mobile": "/assets/uploads/2026/02/macbook-2_mobile.webp",
+      "features": [
+        {
+          "title": "Tạo link thanh toán & mã QR trong 10 giây",
+          "text": "Tạo hóa đơn bằng nội tệ của khách hàng chỉ trong chớp mắt – không cần thiết bị phần cứng"
+        },
+        {
+          "title": "Theo dõi trạng thái đơn hàng thời gian thực",
+          "text": "Trạng thái giao dịch trực tiếp: chờ xử lý / đã thanh toán / hết hạn – không bao giờ bỏ lỡ khách hàng"
+        },
+        {
+          "title": "Thông báo quyết toán ngay lập tức",
+          "text": "Nhân viên bán hàng nhận thông báo tức thì ngay khi khách hoàn tất quá trình thanh toán"
+        },
+        {
+          "title": "Phù hợp cho lượng khách giao dịch lớn",
+          "text": "Lý tưởng cho bán lẻ, khách sạn du lịch, tư vấn, đại lý, thuê xe sang và dịch vụ cao cấp"
+        }
+      ]
+    },
+    {
+      "id": "clients",
+      "tab_label": "Dành cho khách hàng",
+      "title": "Trải nghiệm thanh toán nội địa dễ dàng",
+      "image_desktop": "/assets/uploads/2026/02/iphone-1.webp",
+      "image_mobile": "/assets/uploads/2026/02/iphone-1_mobile.webp",
+      "features": [
+        {
+          "title": "Thanh toán bằng đồng tiền quen thuộc",
+          "text": "Khách hàng thanh toán bằng nội tệ thông qua ứng dụng ngân hàng hàng ngày hoặc thẻ ghi nợ/tín dụng."
+        },
+        {
+          "title": "Không phụ phí hay chi phí ẩn",
+          "text": "Minh bạch tuyệt đối với tỷ giá cố định – không bị trừ thêm các khoản phí bất ngờ trên sao kê."
+        },
+        {
+          "title": "Hoàn tất thanh toán chỉ trong vài giây",
+          "text": "Quét mã QR hoặc click link → xác thực sinh trắc học/ngân hàng → hoàn tất."
+        },
+        {
+          "title": "Biên lai điện tử tức thì",
+          "text": "Màn hình thông báo 'Đã thanh toán thành công' và hóa đơn điện tử xuất hiện ngay lập tức."
+        }
+      ]
+    }
+  ]
+}

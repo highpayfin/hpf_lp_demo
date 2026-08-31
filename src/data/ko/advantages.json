@@ -1,0 +1,68 @@
+{
+  "enabled": true,
+  "title_prefix": "HighPayFin과 함께",
+  "title_middle": "당신의",
+  "title_suffix": "든든한",
+  "highlight_text": "글로벌 비즈니스 성장 동력",
+  "subtitle": "해외 고객은 자국 통화로 결제하고, 귀사는 원하는 자산 형태로 안전하게 정산받습니다",
+  "flags": [
+    {
+      "name": "South Africa",
+      "image": "/assets/img/SouthAfrica.webp"
+    },
+    {
+      "name": "South Korea",
+      "image": "/assets/img/SouthKorea.webp"
+    },
+    {
+      "name": "Thailand",
+      "image": "/assets/img/Thailand.webp"
+    },
+    {
+      "name": "Vietnam",
+      "image": "/assets/img/Vietnam.webp"
+    }
+  ],
+  "industries": [
+    {
+      "title": "글로벌 이커머스 & 오픈마켓",
+      "text": "전 세계 주요 카드와 현지 대체 결제 수단을 연동하여 체크아웃 전환율을 극대화합니다.",
+      "icon": "/assets/uploads/2026/05/advantage-3.svg"
+    },
+    {
+      "title": "해외 부동산 & 개발사",
+      "text": "해외 부동산 대금 결제, 예약 보증금, 분할 납부 및 에이전트 수수료 정산을 지원합니다.",
+      "icon": "/assets/uploads/2026/05/advantage-2.svg"
+    },
+    {
+      "title": "SaaS & 디지털 구독 서비스",
+      "text": "50개 이상의 통화로 정기 구독 결제를 자동화하고 지능형 통화 라우팅을 제공합니다.",
+      "icon": "/assets/uploads/2026/05/advantage-5.svg"
+    },
+    {
+      "title": "호텔, 관광 & 프리미엄 여행",
+      "text": "해외 고객의 자국 통화로 호텔 객실 예약, 투어 패키지 및 전세기 결제를 처리합니다.",
+      "icon": "/assets/uploads/2026/05/advantage-6.svg"
+    },
+    {
+      "title": "B2B 무역 & 수출입 유통",
+      "text": "고부가가치 산업 장비, 전자기기 및 대량 도매 계약의 실시간 검증 결제를 지원합니다.",
+      "icon": "/assets/uploads/2026/05/advantage-4.svg"
+    },
+    {
+      "title": "국제 교육 & 온라인 컨설팅",
+      "text": "대학교 학비 수납, 글로벌 교육 강좌, IT 컨설팅 및 법률 자문료 정산을 처리합니다.",
+      "icon": "/assets/uploads/2026/05/advantage-7.svg"
+    },
+    {
+      "title": "의료 관광 & 헬스케어",
+      "text": "해외 환자 진료비, 정밀 검진, 메디컬 에스테틱 및 웰니스 패키지 결제 솔루션.",
+      "icon": "/assets/uploads/2026/05/advantage-1.svg"
+    },
+    {
+      "title": "핀테크 & 럭셔리 컨시어지",
+      "text": "다중 통화 자동 지급, 고급 렌탈, 투명한 트랜잭션 로그를 제공합니다.",
+      "icon": "/assets/uploads/2026/05/advantage-8.svg"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="157" height="80" viewBox="0 0 157 80" fill="none">
+  <g transform="translate(10, 20)">
+    <!-- KB Star Emblem -->
+    <g transform="translate(0, 5)">
+      <circle cx="15" cy="15" r="14" fill="#1F2933"/>
+      <path d="M15 5L17.5 12H25L19 16.5L21.5 23.5L15 19L8.5 23.5L11 16.5L5 12H12.5L15 5Z" fill="#FFFFFF"/>
+    </g>
+    <!-- KB Bank Text -->
+    <text x="38" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="900" letter-spacing="-0.4px" fill="#1F2933">KB Bank</text>
+    <text x="39" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="600" letter-spacing="0.5px" fill="#52606D">KB국민은행 • KOREA</text>
+  </g>
+</svg>

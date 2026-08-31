@@ -1,0 +1,22 @@
+{
+  "enabled": true,
+  "title": "Chúng tôi là ai",
+  "subtitle": "HighPayFin là cổng thanh toán toàn cầu được cấp phép chuyên xử lý các giao dịch xuyên biên giới đa tiền tệ cho các doanh nghiệp quốc tế.\n\nChúng tôi xây dựng hạ tầng tài chính giúp các doanh nghiệp và sàn thương mại điện tử khắp thế giới chấp nhận thanh toán an toàn, minh bạch và hợp pháp trên hơn 50 loại tiền tệ pháp định và tài sản số.",
+  "cards": [
+    {
+      "title": "Đơn vị Vận hành\nThanh toán Được Cấp phép",
+      "text": "Chúng tôi hoạt động chặt chẽ trong khuôn khổ pháp lý quốc tế, sở hữu giấy phép thanh toán và duy trì tuân thủ nghiêm ngặt các tiêu chuẩn ngân hàng toàn cầu.",
+      "icon": "/assets/uploads/2026/05/who-are-we-1_white.svg"
+    },
+    {
+      "title": "Cổng Kết nối\nĐa Mạng lưới Trực tiếp",
+      "text": "Kết nối trực tiếp tới các hệ thống thanh toán nội địa, mạng lưới thẻ tức thì, mã QR và kênh ngân hàng quốc tế – loại bỏ các bên trung gian không cần thiết.",
+      "icon": "/assets/uploads/2026/05/who-are-we-2_white.svg"
+    },
+    {
+      "title": "Thanh khoản Ngoại hối\nCấp Định chế",
+      "text": "Chúng tôi chuyên sâu về thanh khoản xuyên biên giới và quản trị dòng tiền tự động, mang lại tỷ giá cạnh tranh nhất và cam kết khóa tỷ giá cố định.",
+      "icon": "/assets/uploads/2026/05/who-are-we-3_white.svg"
+    }
+  ]
+}

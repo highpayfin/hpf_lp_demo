@@ -1,0 +1,22 @@
+{
+  "enabled": true,
+  "title": "Setup — in 3 simple steps",
+  "subtitle": "Digital onboarding for global international businesses",
+  "steps": [
+    {
+      "color": "violet",
+      "icon": "/assets/uploads/2026/05/connect-1.svg",
+      "title": "Submit Digital Onboarding & Agreement"
+    },
+    {
+      "color": "green",
+      "icon": "/assets/uploads/2026/05/connect-2.svg",
+      "title": "Get Access to Multi-Currency Dashboard"
+    },
+    {
+      "color": "violet",
+      "icon": "/assets/uploads/2026/05/connect-3.svg",
+      "title": "Start Accepting Global Payments Worldwide"
+    }
+  ]
+}

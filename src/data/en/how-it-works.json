@@ -1,0 +1,30 @@
+{
+  "enabled": true,
+  "title": "How it works",
+  "subtitle": "From multi-currency invoicing to local settlement – in just minutes",
+  "steps": [
+    {
+      "step_label": "Step 1",
+      "image_desktop": "/assets/uploads/2026/07/step-1_white.png",
+      "image_mobile": "/assets/uploads/2026/07/step-1_white_mobile.png",
+      "title": "Business creates a multi-currency invoice",
+      "description": "In your dashboard you enter the amount you want to receive – in VND, KRW, THB, AED or other currencies. The system instantly generates a dynamic payment link and QR code."
+    },
+    {
+      "step_label": "Step 2",
+      "image_desktop": "/assets/uploads/2026/07/step-2_white.png",
+      "image_mobile": "/assets/uploads/2026/07/step-2_white_mobile.png",
+      "title": "Client pays in their local currency",
+      "description": "The client pays in their domestic currency using their local bank app, cards, QR codes, or bank transfers with zero friction."
+    },
+    {
+      "step_label": "Step 3",
+      "image_desktop": "/assets/uploads/2026/07/step-3_white.png",
+      "image_mobile": "/assets/uploads/2026/07/step-3_white_mobile.png",
+      "title": "You receive settlement instantly",
+      "description": "Funds are credited to your account right after payment and settled into your preferred currency (VND, KRW, USDT, etc.) based on your treasury rules."
+    }
+  ],
+  "notice_desktop": "The exchange rate is locked for 30 minutes: the client pays exactly the amount shown on screen with zero volatility risk",
+  "notice_mobile": "The exchange rate is locked for 30 minutes. This protects your deals from sharp market fluctuations"
+}

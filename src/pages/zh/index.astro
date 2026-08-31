@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/Hero.astro';
+import Partners from '../../components/Partners.astro';
+import DontPay from '../../components/DontPay.astro';
+import Product from '../../components/Product.astro';
+import WhoAreWe from '../../components/WhoAreWe.astro';
+import HowItWorks from '../../components/HowItWorks.astro';
+import Advantages from '../../components/Advantages.astro';
+import Practicals from '../../components/Practicals.astro';
+import WhoItsFor from '../../components/WhoItsFor.astro';
+import ConnectSteps from '../../components/ConnectSteps.astro';
+import Trust from '../../components/Trust.astro';
+import Faq from '../../components/Faq.astro';
+import ContactForm from '../../components/ContactForm.astro';
+import CustomSection from '../../components/CustomSection.astro';
+import { getI18nData } from '../../utils/i18n';
+
+const siteConfig = getI18nData('zh', 'site-config');
+---
+
+<BaseLayout title={siteConfig.meta_title} description={siteConfig.meta_description} lang="zh">
+  <main class="main main_no-padding page-main">
+    <div class="block-title-composition-trigger">
+      <Hero lang="zh" />
+    </div>
+    <Partners lang="zh" />
+    <DontPay lang="zh" />
+    <Product lang="zh" />
+    <WhoAreWe lang="zh" />
+    <HowItWorks lang="zh" />
+    <Advantages lang="zh" />
+    <Practicals lang="zh" />
+    <WhoItsFor lang="zh" />
+    <CustomSection lang="zh" position="all" />
+    <ConnectSteps lang="zh" />
+    <Trust lang="zh" />
+    <Faq lang="zh" />
+    <ContactForm lang="zh" />
+  </main>
+</BaseLayout>

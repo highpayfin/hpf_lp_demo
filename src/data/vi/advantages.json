@@ -1,0 +1,68 @@
+{
+  "enabled": true,
+  "title_prefix": "Nơi HighPayFin",
+  "title_middle": "trở thành",
+  "title_suffix": "đòn bẩy",
+  "highlight_text": "thúc đẩy tăng trưởng toàn cầu",
+  "subtitle": "Khi khách hàng quốc tế thanh toán bằng đồng tiền bản địa, và bạn nhận quyết toán bằng loại tài sản mong muốn",
+  "flags": [
+    {
+      "name": "South Africa",
+      "image": "/assets/img/SouthAfrica.webp"
+    },
+    {
+      "name": "South Korea",
+      "image": "/assets/img/SouthKorea.webp"
+    },
+    {
+      "name": "Thailand",
+      "image": "/assets/img/Thailand.webp"
+    },
+    {
+      "name": "Vietnam",
+      "image": "/assets/img/Vietnam.webp"
+    }
+  ],
+  "industries": [
+    {
+      "title": "Thương mại điện tử & Sàn giao dịch",
+      "text": "Chấp nhận thẻ, ví nội địa và phương thức thanh toán thay thế toàn cầu với tỷ lệ chuyển đổi đơn hàng tối đa.",
+      "icon": "/assets/uploads/2026/05/advantage-3.svg"
+    },
+    {
+      "title": "Bất động sản & Chủ đầu tư",
+      "text": "Thanh toán mua bất động sản xuyên biên giới, đặt cọc giữ chỗ, thanh toán theo tiến độ và chi trả hoa hồng đại lý.",
+      "icon": "/assets/uploads/2026/05/advantage-2.svg"
+    },
+    {
+      "title": "SaaS & Dịch vụ số",
+      "text": "Thu phí thuê bao định kỳ trên 50+ loại tiền tệ với cơ chế tự động định tuyến ngoại hối thông minh.",
+      "icon": "/assets/uploads/2026/05/advantage-5.svg"
+    },
+    {
+      "title": "Khách sạn, Du lịch & Nghỉ dưỡng",
+      "text": "Đặt phòng khách sạn, tour du lịch, dịch vụ hỗ trợ đặc biệt và thuê chuyến bay bằng mọi loại tiền tệ.",
+      "icon": "/assets/uploads/2026/05/advantage-6.svg"
+    },
+    {
+      "title": "Xuất nhập khẩu & Thương mại B2B",
+      "text": "Hợp đồng thiết bị, hàng điện tử và bán buôn giá trị cao với cơ chế xác minh giao dịch tức thì.",
+      "icon": "/assets/uploads/2026/05/advantage-4.svg"
+    },
+    {
+      "title": "Giáo dục & Tư vấn trực tuyến",
+      "text": "Học phí đại học, khóa đào tạo quốc tế, tư vấn IT và dịch vụ pháp lý trên toàn cầu.",
+      "icon": "/assets/uploads/2026/05/advantage-7.svg"
+    },
+    {
+      "title": "Y tế & Du lịch chăm sóc sức khỏe",
+      "text": "Thanh toán điều trị y tế quốc tế, chẩn đoán, thẩm mỹ và các gói chăm sóc sức khỏe cao cấp.",
+      "icon": "/assets/uploads/2026/05/advantage-1.svg"
+    },
+    {
+      "title": "Fintech & Dịch vụ cao cấp",
+      "text": "Tự động hóa chi trả đa tiền tệ, thuê xe sang, dịch vụ độc quyền với lịch sử giao dịch minh bạch.",
+      "icon": "/assets/uploads/2026/05/advantage-8.svg"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "title": "Why working with HighPayFin is convenient",
+  "items": [
+    {
+      "title": "Zero Hardware, 100% Digital",
+      "icon": "/assets/uploads/2026/05/practical-1.svg",
+      "points": [
+        "Payment links and QR codes are generated instantly in the dashboard",
+        "No POS terminals, physical hardware, or complex on-site setups required",
+        "Operates seamlessly across 150+ countries via any web or mobile device"
+      ]
+    },
+    {
+      "title": "Transparent & Locked FX Rates",
+      "icon": "/assets/uploads/2026/05/practical-2.svg",
+      "points": [
+        "All exchange margins are transparently included in the checkout rate",
+        "The customer sees the exact final amount in their local currency before paying",
+        "Your business receives 100% of the invoiced settlement amount with zero deductions"
+      ]
+    },
+    {
+      "title": "Multi-Currency Dashboard",
+      "icon": "/assets/uploads/2026/05/practical-3.svg",
+      "points": [
+        "Real-time unified balances, transaction history, and live analytics",
+        "Instant financial export to XLS, CSV, and accounting software",
+        "Role-based access permissions for business owners and financial managers"
+      ]
+    },
+    {
+      "title": "Same-Day Fast Settlement",
+      "icon": "/assets/uploads/2026/05/practical-4.svg",
+      "points": [
+        "From customer checkout to merchant account crediting in minutes",
+        "Direct local bank clearing without multi-day international SWIFT holds"
+      ]
+    },
+    {
+      "title": "Flexible Currency Payouts",
+      "icon": "/assets/uploads/2026/05/practical-5.svg",
+      "points": [
+        "Choose payouts in USD, EUR, GBP, SGD, AED, VND, THB, or USDT",
+        "Accept multi-currency revenue and settle into the assets of your choice"
+      ]
+    },
+    {
+      "title": "Tailored Enterprise Terms",
+      "icon": "/assets/uploads/2026/05/practical-6.svg",
+      "points": [
+        "Custom volume-based processing rates and dedicated treasury channels"
+      ]
+    }
+  ]
+}

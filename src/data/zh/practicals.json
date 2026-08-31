@@ -1,0 +1,56 @@
+{
+  "enabled": true,
+  "title": "为什么选择 HighPayFin 是最便捷的方案",
+  "items": [
+    {
+      "title": "纯数字化，零硬件依赖",
+      "icon": "/assets/uploads/2026/05/practical-1.svg",
+      "points": [
+        "在商户后台即可秒级生成多币种付款链接与专属二维码",
+        "无需任何实体 POS 机、物理硬件或繁复的现场技术调试",
+        "支持在 150 多个国家和地区通过任意电脑或手机设备无缝运行"
+      ]
+    },
+    {
+      "title": "汇率透明，锁定无滑点",
+      "icon": "/assets/uploads/2026/05/practical-2.svg",
+      "points": [
+        "所有换汇成本公开透明，结账汇率一目了然",
+        "客户在付款前清楚看到其实际支付的本币准确数额",
+        "商户全额接收 100% 应收结算款项，没有任何隐性扣费"
+      ]
+    },
+    {
+      "title": "全功能多币种商户后台",
+      "icon": "/assets/uploads/2026/05/practical-3.svg",
+      "points": [
+        "实时掌握多币种资金余额、交易流水和深度数据分析看板",
+        "一键导出标准 XLS、CSV 财务对账明细，方便对接财务软件",
+        "支持针对企业主、财务总监与业务员设立多级权限管控"
+      ]
+    },
+    {
+      "title": "当天快速清算入账",
+      "icon": "/assets/uploads/2026/05/practical-4.svg",
+      "points": [
+        "客户付款成功后数分钟内即可记账至商户账户",
+        "直连本地银行通道，彻底摆脱 SWIFT 多日滞后的资金周转困扰"
+      ]
+    },
+    {
+      "title": "灵活多样的提现币种",
+      "icon": "/assets/uploads/2026/05/practical-5.svg",
+      "points": [
+        "支持结算为 USD、EUR、GBP、SGD、AED、VND、THB 或 USDT",
+        "灵活接收多国币种并随时提现为企业指定的理想资产"
+      ]
+    },
+    {
+      "title": "大客户专属定制化服务",
+      "icon": "/assets/uploads/2026/05/practical-6.svg",
+      "points": [
+        "根据大宗交易体量定制阶梯式优惠费率与专属资金清算通道"
+      ]
+    }
+  ]
+}

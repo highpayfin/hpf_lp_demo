@@ -1,0 +1,52 @@
+---
+import { getI18nData, type SupportedLang } from '../utils/i18n';
+interface Props {
+  lang?: SupportedLang;
+}
+const { lang = 'en' } = Astro.props;
+const faqData = getI18nData(lang, 'faq');
+// Section: Faq
+
+
+const {
+  enabled = true,
+  title = "Frequently Asked Questions",
+  questions = []
+} = faqData;
+---
+
+{enabled !== false && (
+  <section class="block block-faq" id="faq">
+  <div class="container">
+    <div class="title-block title-block_centered desktop">
+      <h2 class="title"><p>{title}</p></h2>
+    </div>
+    <div class="title-block title-block_centered mobile">
+      <h2 class="title"><p set:html={title.replace(/\n/g, '<br />')} /></h2>
+    </div>
+
+    <div class="accordions">
+      {questions.map((item, idx) => (
+        <div class="accordion">
+          <button class="accordion__button">
+            <div class="accordion__button-index">{String(idx + 1).padStart(2, '0')}</div>
+            <h5 class="h5 accordion__button-title desktop"><p>{item.question}</p></h5>
+            <h5 class="accordion__button-title mobile"><p>{item.question}</p></h5>
+            <div class="accordion__button-arrow">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.2539 15.9297L17.209 21.8848L23.1641 15.9297" stroke="currentColor" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </button>
+          <div class="accordion__body">
+            <div class="accordion__content">
+              <div class="desktop"><p set:html={item.answer.replace(/\n/g, '<br />')} /></div>
+              <div class="mobile"><p set:html={item.answer.replace(/\n/g, '<br />')} /></div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+)}

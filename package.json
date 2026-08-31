@@ -1,0 +1,21 @@
+{
+  "name": "high-pay-fin-astro",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"astro dev\" \"decap-server\"",
+    "dev:astro": "astro dev",
+    "cms": "decap-server",
+    "start": "concurrently \"astro dev\" \"decap-server\"",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.4.2"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.5",
+    "decap-server": "^3.10.0"
+  }
+}

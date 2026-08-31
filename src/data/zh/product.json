@@ -1,0 +1,26 @@
+{
+  "enabled": true,
+  "title": "面向全球企业的统一多币种跨境支付基础设施",
+  "client_cards": [
+    {
+      "title": "全球客户",
+      "subtitle": ""
+    },
+    {
+      "title": "多币种收单 (VND/KRW/USD/...)",
+      "subtitle": ""
+    },
+    {
+      "title": "信用卡与本地银行转账",
+      "subtitle": ""
+    },
+    {
+      "title": "动态扫码与本地支付",
+      "subtitle": ""
+    }
+  ],
+  "provider_title": "HighPayFin - 支付通道核心",
+  "provider_tags": "全球收单 • 多币种外汇清算 • 严格合规与反洗钱 • 即时结算",
+  "business_title": "您的跨国企业",
+  "settlement_title": "资金成功结算"
+}

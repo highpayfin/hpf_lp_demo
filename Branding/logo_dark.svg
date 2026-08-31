@@ -1,0 +1,31 @@
+<svg width="345" height="90" viewBox="0 0 345 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- HighPayFin Dark Mode Logo (Snug Pill Badge, Matched Pay/Fin Size & Small Compact Dot) -->
+  <defs>
+    <linearGradient id="darkTealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00FFA8" />
+      <stop offset="100%" stop-color="#00C48C" />
+    </linearGradient>
+  </defs>
+
+  <!-- Identical H Monogram from Logo Symbol -->
+  <g transform="translate(10, 19) scale(0.82)">
+    <rect x="0" y="4" width="16" height="56" rx="8" fill="url(#darkTealGrad)" />
+    <rect x="40" y="4" width="16" height="56" rx="8" fill="url(#darkTealGrad)" />
+    <path d="M0 32 C0 24 20 24 28 32 C36 40 56 40 56 32" stroke="url(#darkTealGrad)" stroke-width="16" stroke-linecap="round" />
+  </g>
+
+  <!-- Wordmark "igh" in Crisp White -->
+  <text x="60" y="58" font-family="'Plus Jakarta Sans', 'Outfit', -apple-system, sans-serif" font-size="44" font-weight="900" fill="#FFFFFF" letter-spacing="-2">igh</text>
+
+  <!-- Small Compact Teal Dot -->
+  <rect x="131" y="49" width="6.5" height="6.5" rx="1.8" fill="#00C48C" />
+
+  <!-- Snug Pill Badge for "Pay" (Dark mode variant) -->
+  <g transform="translate(143, 20)">
+    <rect width="94" height="46" rx="12" fill="#1C2433" stroke="#334155" stroke-width="1.5" />
+    <text x="47" y="35" font-family="'Plus Jakarta Sans', 'Outfit', -apple-system, sans-serif" font-size="41" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="-1.5">Pay</text>
+  </g>
+
+  <!-- Wordmark "Fin" in Glowing Mint Teal (Matched Size to Pay) -->
+  <text x="245" y="58" font-family="'Plus Jakarta Sans', 'Outfit', -apple-system, sans-serif" font-size="44" font-weight="900" fill="#00FFA8" letter-spacing="-1.5">Fin</text>
+</svg>

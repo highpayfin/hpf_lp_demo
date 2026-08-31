@@ -1,0 +1,68 @@
+{
+  "enabled": true,
+  "title_prefix": "Where HighPayFin",
+  "title_middle": "becomes",
+  "title_suffix": "your",
+  "highlight_text": "powers global growth",
+  "subtitle": "When international clients pay in their home currency, and you receive settlement in your preferred treasury assets",
+  "flags": [
+    {
+      "name": "South Africa",
+      "image": "/assets/img/SouthAfrica.webp"
+    },
+    {
+      "name": "South Korea",
+      "image": "/assets/img/SouthKorea.webp"
+    },
+    {
+      "name": "Thailand",
+      "image": "/assets/img/Thailand.webp"
+    },
+    {
+      "name": "Vietnam",
+      "image": "/assets/img/Vietnam.webp"
+    }
+  ],
+  "industries": [
+    {
+      "title": "E-Commerce & Marketplaces",
+      "text": "Accept cards, local APMs, and digital wallets worldwide with maximized checkout conversion.",
+      "icon": "/assets/uploads/2026/05/advantage-3.svg"
+    },
+    {
+      "title": "Real Estate & Developers",
+      "text": "Cross-border property purchases, reservation deposits, installment plans, and agent payouts.",
+      "icon": "/assets/uploads/2026/05/advantage-2.svg"
+    },
+    {
+      "title": "SaaS & Digital Subscriptions",
+      "text": "Recurring subscription billing across 50+ fiat currencies with automated currency routing.",
+      "icon": "/assets/uploads/2026/05/advantage-5.svg"
+    },
+    {
+      "title": "Hotels, Tourism & Travel",
+      "text": "Hotel bookings, holiday tours, concierge services, and flight charters in any traveler's currency.",
+      "icon": "/assets/uploads/2026/05/advantage-6.svg"
+    },
+    {
+      "title": "B2B Supply & Wholesale Trade",
+      "text": "High-value cross-border equipment, electronics, and wholesale contracts with instant verification.",
+      "icon": "/assets/uploads/2026/05/advantage-4.svg"
+    },
+    {
+      "title": "Education & Online Consulting",
+      "text": "University tuition, training courses, IT consulting, and legal advisory services worldwide.",
+      "icon": "/assets/uploads/2026/05/advantage-7.svg"
+    },
+    {
+      "title": "Medical Tourism & Healthcare",
+      "text": "International medical treatment, diagnostic procedures, aesthetic clinics, and wellness packages.",
+      "icon": "/assets/uploads/2026/05/advantage-1.svg"
+    },
+    {
+      "title": "Fintech & Luxury Concierge",
+      "text": "Automated multi-currency payouts, luxury rentals, charter flights, and transparent transaction logs.",
+      "icon": "/assets/uploads/2026/05/advantage-8.svg"
+    }
+  ]
+}

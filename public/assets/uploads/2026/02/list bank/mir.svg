@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="75" height="80" viewBox="0 0 75 80" fill="none">
+  <g transform="translate(6, 18)">
+    <!-- VietQR Frame -->
+    <rect x="15" y="0" width="34" height="24" rx="5" stroke="#1F2933" stroke-width="2"/>
+    <rect x="20" y="5" width="8" height="6" rx="1.5" fill="#1F2933"/>
+    <rect x="36" y="5" width="8" height="6" rx="1.5" fill="#1F2933"/>
+    <rect x="20" y="13" width="8" height="6" rx="1.5" fill="#1F2933"/>
+    <rect x="36" y="13" width="8" height="6" rx="1.5" fill="#1F2933"/>
+    <!-- VietQR Text -->
+    <text x="32" y="38" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="800" letter-spacing="-0.2px" fill="#1F2933">VietQR</text>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+{
+  "title": "Struggling with cross-border payments?",
+  "description": "Global clients actively purchase goods and services abroad, but most businesses lack a compliant, cost-effective, and automated multi-currency checkout.",
+  "cta_text": "Leave a request",
+  "cards": [
+    {
+      "type": "red",
+      "icon": "/assets/uploads/2026/05/dont-pay-red.svg",
+      "title": "High FX fees & lost revenue",
+      "text": "Cross-border bank charges and currency spreads eat up to 5-8% of transaction values before funds even reach your merchant account."
+    },
+    {
+      "type": "red",
+      "icon": "/assets/uploads/2026/05/dont-pay-red.svg",
+      "title": "Slow wire transfers & chargebacks",
+      "text": "Traditional SWIFT wires and intermediaries cause payment friction, multi-day delays, unpredictable holds, and high cart abandonment."
+    },
+    {
+      "type": "green",
+      "icon": "/assets/uploads/2026/05/dont-pay-green.svg",
+      "title": "High Pay Fin —\na unified global solution",
+      "text": "Accepting 50+ fiat currencies and digital assets with instant automated conversion and local currency payouts."
+    }
+  ]
+}

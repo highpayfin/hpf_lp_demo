@@ -1,0 +1,201 @@
+backend:
+  name: github
+  repo: your-username/high-pay-fin-clone
+  branch: main
+
+local_backend: true
+
+media_folder: "public/assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "settings"
+    label: "⚙️ Cấu hình Chung"
+    files:
+      - label: "Thông tin liên hệ & Cài đặt chung"
+        name: "general"
+        file: "src/data/site-config.json"
+        fields:
+          - { label: "Tên Website", name: "site_name", widget: "string", default: "High Pay Fin" }
+          - { label: "Tiêu đề trang (SEO Title)", name: "meta_title", widget: "string" }
+          - { label: "Mô tả SEO (Meta Description)", name: "meta_description", widget: "text" }
+          - { label: "Số điện thoại Hotline", name: "phone", widget: "string" }
+          - { label: "Link Tel Hotline", name: "phone_link", widget: "string" }
+          - { label: "Email liên hệ", name: "email", widget: "string" }
+          - { label: "Telegram hỗ trợ", name: "telegram_url", widget: "string" }
+
+  - name: "home"
+    label: "🏠 Toàn bộ Section Trang chủ"
+    files:
+      - label: "1. Hero Section (Đầu trang)"
+        name: "hero"
+        file: "src/data/home-hero.json"
+        fields:
+          - label: "Danh sách tiêu đề chạy (Ticker Titles)"
+            name: "ticker_titles"
+            widget: "list"
+            fields:
+              - { label: "Tiêu đề", name: "title", widget: "string" }
+          - { label: "Hậu tố thương hiệu (Brand Suffix)", name: "brand_suffix", widget: "string", default: "with High Pay Fin" }
+          - { label: "Đoạn văn mô tả", name: "description", widget: "text" }
+          - { label: "Nút CTA", name: "cta_text", widget: "string", default: "Connect to High Pay Fin" }
+
+      - label: "2. Section: Đối tác Ngân hàng (Partners)"
+        name: "partners"
+        file: "src/data/partners.json"
+        fields:
+          - { label: "Dòng ghi chú ngân hàng", name: "national_bank_text", widget: "text" }
+          - label: "Danh sách Logo đối tác"
+            name: "partner_logos"
+            widget: "list"
+            fields:
+              - { label: "Tên đối tác", name: "name", widget: "string" }
+              - { label: "Hình ảnh Logo", name: "image", widget: "image" }
+
+      - label: "3. Section: Hạ tầng Thanh toán (Product)"
+        name: "product"
+        file: "src/data/product.json"
+        fields:
+          - { label: "Tiêu đề chính", name: "title", widget: "string" }
+          - label: "Các khối phương thức khách hàng"
+            name: "client_cards"
+            widget: "list"
+            fields:
+              - { label: "Tiêu đề", name: "title", widget: "string" }
+          - { label: "Tên Provider trung tâm", name: "provider_title", widget: "string" }
+          - { label: "Tags dịch vụ provider", name: "provider_tags", widget: "string" }
+          - { label: "Tiêu đề Doanh nghiệp", name: "business_title", widget: "string" }
+          - { label: "Tiêu đề Quyết toán", name: "settlement_title", widget: "string" }
+
+      - label: "4. Section: Lợi thế Cạnh tranh (Advantages)"
+        name: "advantages"
+        file: "src/data/advantages.json"
+        fields:
+          - { label: "Tiền tố tiêu đề", name: "title_prefix", widget: "string", default: "Where High Pay Fin" }
+          - { label: "Từ khóa nổi bật (màu tím)", name: "highlight_text", widget: "string", default: "competitive advantage" }
+          - { label: "Mô tả phụ", name: "subtitle", widget: "text" }
+          - label: "Danh sách 8 ngành nghề"
+            name: "industries"
+            widget: "list"
+            fields:
+              - { label: "Tên ngành nghề", name: "title", widget: "string" }
+              - { label: "Mô tả giải pháp", name: "text", widget: "text" }
+              - { label: "Icon SVG", name: "icon", widget: "image" }
+
+      - label: "5. Section: Tính Tiện lợi (Practicals)"
+        name: "practicals"
+        file: "src/data/practicals.json"
+        fields:
+          - { label: "Tiêu đề", name: "title", widget: "string" }
+          - label: "Danh sách ưu điểm"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Tiêu đề ưu điểm", name: "title", widget: "string" }
+              - { label: "Icon", name: "icon", widget: "image" }
+              - { label: "Các điểm chi tiết (Bullets)", name: "points", widget: "list" }
+
+      - label: "6. Section: Quy trình (How It Works)"
+        name: "how_it_works"
+        file: "src/data/how-it-works.json"
+        fields:
+          - { label: "Tiêu đề khối", name: "title", widget: "string" }
+          - { label: "Mô tả phụ", name: "subtitle", widget: "text" }
+          - label: "Các bước thực hiện"
+            name: "steps"
+            widget: "list"
+            fields:
+              - { label: "Số thứ tự", name: "step_number", widget: "string" }
+              - { label: "Tiêu đề bước", name: "title", widget: "string" }
+              - { label: "Nội dung chi tiết", name: "description", widget: "text" }
+
+      - label: "7. Section: Giới thiệu (Who We Are)"
+        name: "who_are_we"
+        file: "src/data/who-are-we.json"
+        fields:
+          - { label: "Tiêu đề", name: "title", widget: "string" }
+          - { label: "Mô tả", name: "subtitle", widget: "text" }
+          - label: "3 Thẻ thông tin"
+            name: "cards"
+            widget: "list"
+            fields:
+              - { label: "Tiêu đề", name: "title", widget: "string" }
+              - { label: "Nội dung", name: "text", widget: "text" }
+              - { label: "Icon SVG", name: "icon", widget: "image" }
+
+      - label: "8. Section: Đối tượng Khách hàng (Who It's For Tabs)"
+        name: "who_its_for"
+        file: "src/data/who-its-for.json"
+        fields:
+          - { label: "Tiêu đề chính", name: "title", widget: "string" }
+          - label: "Danh sách các Tabs"
+            name: "tabs"
+            widget: "list"
+            fields:
+              - { label: "ID Tab", name: "id", widget: "string" }
+              - { label: "Tên nhãn Tab", name: "tab_label", widget: "string" }
+              - { label: "Tiêu đề nội dung", name: "title", widget: "string" }
+              - { label: "Đoạn văn mô tả", name: "description", widget: "text" }
+              - { label: "Các tính năng gạch đầu dòng", name: "features", widget: "list" }
+              - { label: "Hình ảnh minh họa", name: "image", widget: "image" }
+
+      - label: "9. Section: Các bước Kết nối (Connect Steps)"
+        name: "connect_steps"
+        file: "src/data/connect-steps.json"
+        fields:
+          - { label: "Tiêu đề", name: "title", widget: "string" }
+          - label: "3 Bước kết nối"
+            name: "steps"
+            widget: "list"
+            fields:
+              - { label: "Số bước", name: "step", widget: "string" }
+              - { label: "Tiêu đề bước", name: "title", widget: "string" }
+              - { label: "Mô tả", name: "description", widget: "text" }
+              - { label: "Icon SVG", name: "icon", widget: "image" }
+
+      - label: "10. Section: Bảo mật & Pháp lý (Trust & Security)"
+        name: "trust"
+        file: "src/data/trust.json"
+        fields:
+          - { label: "Tiêu đề", name: "title", widget: "string" }
+          - label: "Các thẻ bảo chứng"
+            name: "cards"
+            widget: "list"
+            fields:
+              - { label: "Tiêu đề", name: "title", widget: "string" }
+              - { label: "Mô tả", name: "text", widget: "text" }
+
+      - label: "11. Section: Form Liên hệ & Tư vấn (Contact Form)"
+        name: "contact"
+        file: "src/data/contact.json"
+        fields:
+          - { label: "Tiêu đề Form", name: "form_title", widget: "string" }
+          - { label: "Mô tả phụ", name: "form_subtitle", widget: "text" }
+          - { label: "Chữ trên nút gửi", name: "button_text", widget: "string" }
+          - { label: "Ghi chú chính sách bảo mật", name: "privacy_note", widget: "string" }
+
+      - label: "12. Chân trang (Footer)"
+        name: "footer"
+        file: "src/data/footer.json"
+        fields:
+          - { label: "Disclaimer", name: "disclaimer", widget: "text" }
+          - { label: "Bản quyền (Copyright)", name: "copyright", widget: "string" }
+          - { label: "Chữ link chính sách", name: "privacy_policy_text", widget: "string" }
+          - { label: "Đường dẫn link", name: "privacy_policy_link", widget: "string" }
+          - { label: "Hotline", name: "phone", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+
+  - name: "faq"
+    label: "❓ Câu hỏi thường gặp (FAQ)"
+    files:
+      - label: "Danh sách FAQ"
+        name: "faq_list"
+        file: "src/data/faq.json"
+        fields:
+          - { label: "Tiêu đề Section", name: "title", widget: "string" }
+          - label: "Các câu hỏi"
+            name: "questions"
+            widget: "list"
+            fields:
+              - { label: "Câu hỏi", name: "question", widget: "string" }
+              - { label: "Câu trả lời", name: "answer", widget: "markdown" }

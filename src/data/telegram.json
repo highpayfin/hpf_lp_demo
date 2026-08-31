@@ -1,0 +1,7 @@
+{
+  "enable_telegram": true,
+  "telegram_bot_token": "8245903268:AAFq9mgbtARWtNIq0d9rnWpo2dgn0iSsnNA",
+  "telegram_chat_id": "1881560150",
+  "success_message": "Thank you! Your request has been submitted successfully. A HighPayFin specialist will get in touch with you shortly.",
+  "error_message": "An error occurred while submitting your request. Please contact us directly via Telegram: @highpayfin"
+}

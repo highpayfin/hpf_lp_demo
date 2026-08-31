@@ -1,0 +1,26 @@
+{
+  "enabled": true,
+  "title": "해외 크로스보더 결제에 어려움을 겪고 계신가요?",
+  "description": "전 세계 고객들은 해외 상품과 서비스를 적극적으로 구매하지만, 대다수 기업은 합법적이고 자동화된 저비용 다중 통화 결제 인프라를 갖추지 못하고 있습니다.",
+  "cta_text": "문의 남기기",
+  "cards": [
+    {
+      "type": "red",
+      "icon": "/assets/uploads/2026/05/dont-pay-red.svg",
+      "title": "과도한 환전 수수료 & 매출 손실",
+      "text": "국제 송금 수수료와 은행의 불리한 환율 스프레드로 인해 정산 금액의 5~8%가 수수료로 차감됩니다."
+    },
+    {
+      "type": "red",
+      "icon": "/assets/uploads/2026/05/dont-pay-red.svg",
+      "title": "느린 SWIFT 송금 & 잦은 결제 실패",
+      "text": "전통적인 국제 전신환은 수일간의 지연, 원인 모를 자금 동결, 높은 이탈률을 유발합니다."
+    },
+    {
+      "type": "green",
+      "icon": "/assets/uploads/2026/05/dont-pay-green.svg",
+      "title": "High Pay Fin —\n통합 글로벌 결제 솔루션",
+      "text": "50개 이상의 법정 통화 및 디지털 자산을 실시간 환전하여 원하는 통화로 즉시 정산합니다."
+    }
+  ]
+}

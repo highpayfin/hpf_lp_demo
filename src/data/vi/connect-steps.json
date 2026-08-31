@@ -1,0 +1,22 @@
+{
+  "enabled": true,
+  "title": "Kết nối — chỉ với 3 bước đơn giản",
+  "subtitle": "Kích hoạt trực tuyến cho các doanh nghiệp quốc tế toàn cầu",
+  "steps": [
+    {
+      "color": "violet",
+      "icon": "/assets/uploads/2026/05/connect-1.svg",
+      "title": "Gửi thông tin doanh nghiệp & Ký hợp đồng"
+    },
+    {
+      "color": "green",
+      "icon": "/assets/uploads/2026/05/connect-2.svg",
+      "title": "Nhận quyền truy cập Bảng điều khiển Đa tiền tệ"
+    },
+    {
+      "color": "violet",
+      "icon": "/assets/uploads/2026/05/connect-3.svg",
+      "title": "Bắt đầu nhận thanh toán từ khách hàng toàn cầu"
+    }
+  ]
+}

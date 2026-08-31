@@ -1,0 +1,22 @@
+{
+  "enabled": true,
+  "title": "快速接入 — 仅需 3 步",
+  "subtitle": "为全球出海跨国企业打造的无纸化接入流程",
+  "steps": [
+    {
+      "color": "violet",
+      "icon": "/assets/uploads/2026/05/connect-1.svg",
+      "title": "提交企业资质 & 线上签署合作协议"
+    },
+    {
+      "color": "green",
+      "icon": "/assets/uploads/2026/05/connect-2.svg",
+      "title": "即刻开通多币种商户后台权限"
+    },
+    {
+      "color": "violet",
+      "icon": "/assets/uploads/2026/05/connect-3.svg",
+      "title": "全面开启全球客户多币种收单"
+    }
+  ]
+}

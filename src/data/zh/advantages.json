@@ -1,0 +1,68 @@
+{
+  "enabled": true,
+  "title_prefix": "选择 HighPayFin",
+  "title_middle": "成为",
+  "title_suffix": "您的",
+  "highlight_text": "赋能企业全球业务增长",
+  "subtitle": "海外客户以当地币种轻松付款，您以理想的资产形式安全收款",
+  "flags": [
+    {
+      "name": "South Africa",
+      "image": "/assets/img/SouthAfrica.webp"
+    },
+    {
+      "name": "South Korea",
+      "image": "/assets/img/SouthKorea.webp"
+    },
+    {
+      "name": "Thailand",
+      "image": "/assets/img/Thailand.webp"
+    },
+    {
+      "name": "Vietnam",
+      "image": "/assets/img/Vietnam.webp"
+    }
+  ],
+  "industries": [
+    {
+      "title": "跨境电商与出海独立站",
+      "text": "接入全球主流信用卡与本地支付方式，最大化提升海外结账转化率。",
+      "icon": "/assets/uploads/2026/05/advantage-3.svg"
+    },
+    {
+      "title": "海外地产与开发商",
+      "text": "支持跨国房产大额购房款、定金支付、分期款项及经纪人佣金结算。",
+      "icon": "/assets/uploads/2026/05/advantage-2.svg"
+    },
+    {
+      "title": "SaaS 软件与数字订阅",
+      "text": "跨 50+ 币种的周期性订阅收费，内置智能多币种外汇自动结算。",
+      "icon": "/assets/uploads/2026/05/advantage-5.svg"
+    },
+    {
+      "title": "酒店旅游与高端出行",
+      "text": "支持全球游客使用母国货币预订酒店客房、度假行程与私人包机。",
+      "icon": "/assets/uploads/2026/05/advantage-6.svg"
+    },
+    {
+      "title": "大宗进出口与 B2B 贸易",
+      "text": "大型机械设备、消费电子与大宗批发合同支付，支持即时清算核验。",
+      "icon": "/assets/uploads/2026/05/advantage-4.svg"
+    },
+    {
+      "title": "国际教育与在线咨询",
+      "text": "全球留学生学费收取、国际培训课程、IT 咨询与跨国法律服务费。",
+      "icon": "/assets/uploads/2026/05/advantage-7.svg"
+    },
+    {
+      "title": "医疗旅游与跨境大健康",
+      "text": "跨国就医诊疗、医疗美容与海外高端康养套餐便捷支付。",
+      "icon": "/assets/uploads/2026/05/advantage-1.svg"
+    },
+    {
+      "title": "金融科技与奢华礼宾服务",
+      "text": "自动化多币种分发、豪车游艇租赁、透明可查的资金流水日志。",
+      "icon": "/assets/uploads/2026/05/advantage-8.svg"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+---
+import { getI18nData, type SupportedLang } from '../utils/i18n';
+
+interface Props {
+  lang?: SupportedLang;
+  position?: string;
+}
+
+const { lang = 'en', position = 'default' } = Astro.props;
+const customData = getI18nData(lang, 'custom-sections') || { sections: [] };
+const sections = (customData.sections || []).filter((s: any) => s.enabled !== false && (!s.position || s.position === position || position === 'all'));
+---
+
+{sections.length > 0 && sections.map((sec: any) => (
+  <section class="block block-custom-section" style="padding: 80px 0;">
+    <div class="container">
+      <div class="wrapper" style="background: rgba(16, 185, 129, 0.05); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 24px; padding: 48px 32px; text-align: center;">
+        {sec.badge && (
+          <div style="display: inline-block; padding: 6px 16px; border-radius: 100px; background: #047857; color: #fff; font-size: 13px; font-weight: 600; margin-bottom: 20px;">
+            {sec.badge}
+          </div>
+        )}
+        {sec.title && (
+          <h2 class="title" style="font-size: 36px; line-height: 1.2; margin-bottom: 16px; color: #111;">
+            <p set:html={sec.title.replace(/\n/g, '<br />')} />
+          </h2>
+        )}
+        {sec.subtitle && (
+          <div class="text-large description" style="max-width: 800px; margin: 0 auto 24px; color: #4B5563; font-size: 18px; line-height: 1.6;">
+            <p set:html={sec.subtitle.replace(/\n/g, '<br />')} />
+          </div>
+        )}
+        {sec.content_html && (
+          <div class="custom-content" style="max-width: 900px; margin: 0 auto 30px; text-align: left; line-height: 1.7; color: #374151;" set:html={sec.content_html} />
+        )}
+        {sec.button_text && (
+          <div class="btn-wrapper" style="margin-top: 24px;">
+            <a href={sec.button_link || '#form'} class="btn btn_second" style="display: inline-flex; align-items: center; justify-content: center; padding: 14px 32px; border-radius: 100px; background: #047857; color: #fff; text-decoration: none; font-weight: 600;">
+              {sec.button_text}
+            </a>
+          </div>
+        )}
+      </div>
+    </div>
+  </section>
+))}

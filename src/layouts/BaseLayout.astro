@@ -1,0 +1,235 @@
+---
+import type { SupportedLang } from '../utils/i18n';
+
+interface Props {
+  title?: string;
+  description?: string;
+  lang?: SupportedLang;
+}
+
+const {
+  title = "High Pay Fin - Global Multi-Currency Payment Infrastructure",
+  description = "Accept 50+ global fiat currencies and digital assets with instant cross-border settlement, low fees, and full regulatory compliance.",
+  lang = 'en'
+} = Astro.props;
+
+import Header from '../components/Header.astro';
+import MobileMenu from '../components/MobileMenu.astro';
+import CookieBanner from '../components/CookieBanner.astro';
+import ContactModal from '../components/ContactModal.astro';
+import Footer from '../components/Footer.astro';
+import telegramSettings from '../data/telegram.json';
+---
+
+<!DOCTYPE html>
+<html lang={lang}>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#10B981">
+
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:site_name" content="High Pay Fin">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicons -->
+  <link rel="icon" href="/assets/uploads/2026/02/logo_square.svg" sizes="32x32">
+  <link rel="icon" href="/assets/uploads/2026/02/logo_square.svg" sizes="192x192">
+  <link rel="apple-touch-icon" href="/assets/uploads/2026/02/logo_square.svg">
+  <meta name="msapplication-TileImage" content="/assets/uploads/2026/02/logo_square.svg">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/assets/fancybox/fancybox.css">
+  <link rel="stylesheet" href="/assets/vendor/intlTelInput.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@29.2.3/dist/css/intlTelInput.min.css?ver=29.2.3">
+  <link rel="stylesheet" href="/assets/vendor/choices.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@11.2.3/public/assets/styles/choices.min.css?ver=11.2.3">
+  <link rel="stylesheet" href="/assets/css/main.css?v=1.0.10.2">
+
+  <style is:global>
+    /* Static label for country selector */
+    .input-base .field-static-label {
+      display: block;
+      font-size: 12px;
+      line-height: 1.3;
+      color: inherit;
+      opacity: 0.55;
+      margin: 0 0 4px;
+    }
+    .input-base .choices {
+      margin-bottom: 0;
+      font-size: 15px;
+      width: 100%;
+    }
+    .input-base .choices__inner {
+      background: transparent;
+      border: none;
+      padding: 0;
+      min-height: auto;
+      font-size: inherit;
+      display: flex;
+      align-items: center;
+    }
+    .input-base .choices__list--single {
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+    .choices__list .iti__flag,
+    .choices__list--single .iti__flag,
+    .choices__item .iti__flag {
+      display: inline-block !important;
+      width: 20px !important;
+      height: 14px !important;
+      vertical-align: middle !important;
+      margin-right: 8px !important;
+      background-image: url("/assets/img/flags.webp") !important;
+      background-repeat: no-repeat !important;
+      background-size: calc(244 * 20px) 14px !important;
+      background-position: calc(var(--iti-flag-offset, 0) * 20px) 0 !important;
+      box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4) !important;
+      border-radius: 2px !important;
+      flex-shrink: 0 !important;
+    }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      .choices__list .iti__flag,
+      .choices__list--single .iti__flag,
+      .choices__item .iti__flag {
+        background-image: url("/assets/img/flags@2x.webp") !important;
+      }
+    }
+    .iti {
+      width: 100%;
+    }
+  </style>
+
+  <!-- Scripts: jQuery, GSAP, Fancybox, Plugins -->
+  <script is:inline src="/assets/js/jquery.js"></script>
+  <script is:inline src="/assets/fancybox/fancybox.umd.js"></script>
+  <script is:inline src="/assets/gsap/gsap.min.js"></script>
+  <script is:inline src="/assets/gsap/ScrollTrigger.min.js"></script>
+  <script is:inline src="/assets/gsap/Draggable.min.js"></script>
+  <script is:inline src="/assets/vendor/intlTelInputWithUtils.min.js"></script>
+  <script is:inline src="https://cdn.jsdelivr.net/npm/intl-tel-input@29.2.3/build/js/intlTelInputWithUtils.min.js"></script>
+  <script is:inline src="/assets/vendor/choices.min.js"></script>
+  <script is:inline src="https://cdn.jsdelivr.net/npm/choices.js@11.2.3/public/assets/scripts/choices.min.js"></script>
+  <script is:inline src="/assets/js/modal.js?v=1.0.10.2"></script>
+  <script is:inline src="/assets/js/input.js?v=1.0.10.2"></script>
+  <script is:inline src="/assets/js/main.js?v=1.0.10.2"></script>
+
+  <!-- Decap CMS Identity Widget (for Admin login) -->
+  <script is:inline src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <Header lang={lang} />
+  <MobileMenu lang={lang} />
+  <CookieBanner />
+
+  <slot />
+
+  <ContactModal lang={lang} />
+  <Footer lang={lang} />
+
+  <script is:inline>
+    // Netlify / Decap Identity redirect
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", function(user) {
+        if (!user) {
+          window.netlifyIdentity.on("login", function() {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+
+    // Initialize intlTelInput on all phone inputs
+    function initAllPhoneInputs() {
+      try {
+        if (typeof window.intlTelInput !== 'function') return;
+        if (!window.intlTelInputGlobals) {
+          window.intlTelInputGlobals = { getInstance: window.intlTelInput.getInstance };
+        }
+        document.querySelectorAll('input[name="phone"]').forEach(function (input) {
+          if (input.dataset.itiInit) return;
+          input.dataset.itiInit = '1';
+          window.intlTelInput(input, {
+            initialCountry: 'vn',
+            preferredCountries: ['vn', 'th', 'sg', 'ae', 'us', 'gb', 'za', 'kr'],
+            separateDialCode: true,
+            nationalMode: true,
+            autoPlaceholder: 'aggressive'
+          });
+        });
+      } catch (err) {
+        console.warn("intlTelInput initialization error:", err);
+      }
+    }
+
+    // Initialize Choices.js on country select inputs
+    function initAllCountryChoices() {
+      try {
+        if (typeof window.Choices !== 'function') return;
+
+        document.querySelectorAll('select[name="country-registration"]').forEach(function (select) {
+          if (select.dataset.choicesInit) return;
+          select.dataset.choicesInit = '1';
+
+          var options = Array.from(select.options);
+          var choicesList = options.map(function (opt) {
+            var iso2 = (opt.dataset.iso2 || 'vn').toLowerCase();
+            var name = opt.value || opt.text;
+            return {
+              value: name,
+              label: '<span class="iti__flag iti__' + iso2 + '"></span><span>' + name + '</span>',
+              selected: opt.selected || iso2 === 'vn',
+              customProperties: { iso2: iso2, name: name }
+            };
+          });
+
+          new Choices(select, {
+            choices: choicesList,
+            searchEnabled: true,
+            searchPlaceholderValue: 'Search country…',
+            itemSelectText: '',
+            shouldSort: false,
+            allowHTML: true,
+            placeholderValue: 'Country of business registration'
+          });
+        });
+      } catch (err) {
+        console.warn("Choices initialization error:", err);
+      }
+    }
+
+    // Run initializations on load & ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', function() {
+        initAllPhoneInputs();
+        initAllCountryChoices();
+      });
+    } else {
+      initAllPhoneInputs();
+      initAllCountryChoices();
+    }
+    window.addEventListener('load', function() {
+      initAllPhoneInputs();
+      initAllCountryChoices();
+    });
+  </script>
+
+  <!-- Telegram Form Submission Handler -->
+  <script is:inline define:vars={{ telegramSettings }}>
+    window.__TELEGRAM_CONFIG__ = telegramSettings;
+  </script>
+  <script src="/assets/js/form-telegram.js" is:inline></script>
+</body>
+</html>

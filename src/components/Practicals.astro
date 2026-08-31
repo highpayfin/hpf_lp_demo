@@ -1,0 +1,61 @@
+---
+import { getI18nData, type SupportedLang } from '../utils/i18n';
+interface Props {
+  lang?: SupportedLang;
+}
+const { lang = 'en' } = Astro.props;
+const practicalsData = getI18nData(lang, 'practicals');
+// Section: Practicals
+
+
+const {
+  enabled = true,
+  title = "Why working with High Pay Fin is convenient",
+  items = []
+} = practicalsData;
+---
+
+{enabled !== false && (
+  <section class="block block-practicals" id="advantages">
+  <div class="container">
+    <div class="title-block title-block_centered desktop">
+      <h2 class="title"><p set:html={title.replace(/\s+is\s+/i, '<br />is ')} /></h2>
+    </div>
+    <div class="title-block mobile">
+      <h2 class="title"><p set:html={title.replace(/\n/g, '<br />')} /></h2>
+    </div>
+
+    <div class="practicals desktop">
+      {items.map((item, idx) => (
+        <div class="practical" gsap-card="practicals-row-1">
+          <img class="practical__image" src={item.icon} alt={item.title}>
+          <h5 class="h5 practical__title"><p>{item.title}</p></h5>
+          <div class="practical__text">
+            <ul>
+              {item.points.map((pt) => (
+                <li>• {pt}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="practicals mobile">
+      {items.map((item, idx) => (
+        <div class="practical" gsap-card="practicals-row-1">
+          <img class="practical__image" src={item.icon} alt={item.title}>
+          <h5 class="h5 practical__title"><p>{item.title}</p></h5>
+          <div class="practical__text">
+            <ul>
+              {item.points.map((pt) => (
+                <li>• {pt}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+)}

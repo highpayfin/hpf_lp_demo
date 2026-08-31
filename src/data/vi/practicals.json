@@ -1,0 +1,56 @@
+{
+  "enabled": true,
+  "title": "Vì sao lựa chọn HighPayFin lại vô cùng tiện lợi",
+  "items": [
+    {
+      "title": "Hoàn toàn Kỹ thuật số, 0 Cần Phần cứng",
+      "icon": "/assets/uploads/2026/05/practical-1.svg",
+      "points": [
+        "Link thanh toán và mã QR được tạo ngay lập tức trên trang quản trị",
+        "Không cần thiết bị POS vật lý hay cài đặt phức tạp tại địa điểm",
+        "Hoạt động mượt mà trên hơn 150 quốc gia qua bất kỳ thiết bị web hay di động nào"
+      ]
+    },
+    {
+      "title": "Tỷ giá Minh bạch & Được Khóa Cố định",
+      "icon": "/assets/uploads/2026/05/practical-2.svg",
+      "points": [
+        "Toàn bộ chi phí ngoại hối được thể hiện minh bạch trong tỷ giá thanh toán",
+        "Khách hàng thấy chính xác số tiền cần thanh toán bằng nội tệ trước khi trả",
+        "Doanh nghiệp của bạn nhận đủ 100% số tiền quyết toán mà không bị trừ phí ẩn"
+      ]
+    },
+    {
+      "title": "Bảng điều khiển Đa Tiền tệ",
+      "icon": "/assets/uploads/2026/05/practical-3.svg",
+      "points": [
+        "Theo dõi số dư hợp nhất, lịch sử giao dịch và phân tích trực tiếp theo thời gian thực",
+        "Xuất báo cáo tài chính tức thì sang định dạng XLS, CSV và phần mềm kế toán",
+        "Phân quyền người dùng chi tiết cho chủ doanh nghiệp và kế toán trưởng"
+      ]
+    },
+    {
+      "title": "Quyết toán Nhanh Trong Ngày",
+      "icon": "/assets/uploads/2026/05/practical-4.svg",
+      "points": [
+        "Tiền được ghi có vào tài khoản doanh nghiệp chỉ vài phút sau khi khách thanh toán",
+        "Thanh toán trực tiếp qua ngân hàng nội địa, không bị giữ tiền nhiều ngày như SWIFT"
+      ]
+    },
+    {
+      "title": "Lựa chọn Chi trả Linh hoạt",
+      "icon": "/assets/uploads/2026/05/practical-5.svg",
+      "points": [
+        "Tùy chọn nhận tiền bằng USD, EUR, GBP, SGD, AED, VND, THB hoặc USDT",
+        "Thu doanh thu bằng nhiều loại tiền tệ và quyết toán về tài sản mong muốn"
+      ]
+    },
+    {
+      "title": "Chính sách Ưu đãi Cho Doanh nghiệp Lớn",
+      "icon": "/assets/uploads/2026/05/practical-6.svg",
+      "points": [
+        "Mức phí xử lý ưu đãi theo doanh số lớn và kênh quản lý thanh khoản chuyên biệt"
+      ]
+    }
+  ]
+}

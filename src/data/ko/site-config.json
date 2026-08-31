@@ -1,0 +1,32 @@
+{
+  "menu_items": [
+    {
+      "title": "제품 소개",
+      "url": "/ko/#product"
+    },
+    {
+      "title": "작동 방식",
+      "url": "/ko/#whats-work"
+    },
+    {
+      "title": "핵심 장점",
+      "url": "/ko/#advantages"
+    },
+    {
+      "title": "적용 분야",
+      "url": "/ko/#for-whom"
+    },
+    {
+      "title": "FAQ",
+      "url": "/ko/#faq"
+    }
+  ],
+  "meta_description": "국제 비즈니스를 위한 글로벌 다중 통화 결제 솔루션. 50개 이상의 법정 통화 및 디지털 자산 지원, 즉시 정산, 최저 수수료, 완전한 규정 준수.",
+  "site_name": "High Pay Fin",
+  "phone_link": " ",
+  "phone": " ",
+  "header_cta_text": "상담 신청",
+  "telegram_url": "https://t.me/highpayfin",
+  "email": "info@highpayfin.com",
+  "meta_title": "High Pay Fin - 글로벌 다중 통화 결제 인프라"
+}

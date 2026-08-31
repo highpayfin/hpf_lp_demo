@@ -1,0 +1,26 @@
+{
+  "enabled": true,
+  "title": "Bạn đang gặp khó khăn với thanh toán quốc tế?",
+  "description": "Khách hàng toàn cầu luôn có nhu cầu mua sắm và giao thương quốc tế, nhưng đa số doanh nghiệp thiếu cổng thanh toán đa tiền tệ tự động, chi phí thấp và tuân thủ pháp lý.",
+  "cta_text": "Gửi yêu cầu",
+  "cards": [
+    {
+      "type": "red",
+      "icon": "/assets/uploads/2026/05/dont-pay-red.svg",
+      "title": "Phí chuyển đổi ngoại tệ cao & thất thoát doanh thu",
+      "text": "Các loại phí chuyển tiền xuyên biên giới và chênh lệch tỷ giá ngân hàng có thể làm hao hụt từ 5-8% giá trị đơn hàng trước khi tiền về đến tài khoản doanh nghiệp."
+    },
+    {
+      "type": "red",
+      "icon": "/assets/uploads/2026/05/dont-pay-red.svg",
+      "title": "Chuyển tiền SWIFT chậm trễ & rủi ro bồi hoàn",
+      "text": "Các giao dịch chuyển tiền truyền thống qua nhiều ngân hàng trung gian thường mất nhiều ngày, dễ bị giữ tiền không rõ nguyên nhân và tăng tỷ lệ khách bỏ đơn."
+    },
+    {
+      "type": "green",
+      "icon": "/assets/uploads/2026/05/dont-pay-green.svg",
+      "title": "High Pay Fin —\ngiải pháp hợp nhất toàn cầu",
+      "text": "Chấp nhận hơn 50 loại tiền tệ pháp định và tài sản số với cơ chế tự động quy đổi tức thì và quyết toán nhanh chóng về đồng tiền bạn chọn."
+    }
+  ]
+}

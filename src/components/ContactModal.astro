@@ -1,0 +1,239 @@
+---
+import { getI18nData, type SupportedLang } from '../utils/i18n';
+import countries from '../data/countries.json';
+interface Props {
+  lang?: SupportedLang;
+}
+const { lang = 'en' } = Astro.props;
+const contactData = getI18nData(lang, 'contact');
+// All Interactive Modals
+
+
+
+const {
+  form_title = "Contact Us",
+  form_subtitle = "Start accepting global payments tomorrow",
+  button_text = "Submit Request"
+} = contactData;
+---
+<!-- Modal 1: General Contact Form -->
+<div class="modal" id="contact-form">
+	<div class="modal__wrapper">
+		<div class="modal__shadow"></div>
+		<div class="form-modal modal__content">
+			<button class="modal__close" aria-label="Close modal">
+				<div class="modal__close-icon"></div>
+			</button>
+			<div class="form-modal__title">{form_title}</div>
+			<div class="form-modal__text">{form_subtitle}</div>
+			<form class="form form-modal__form gsap-fade">
+				<input type="hidden" name="subject" value="Contact Form - popup">
+				<div class="input-base form__input">
+					<i class="icon">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="#B8BBBE" xmlns="http://www.w3.org/2000/svg">
+							<path d="M2.70801 18.3333V17.2917C2.70801 16.3341 2.89661 15.3859 3.26305 14.5013C3.62949 13.6166 4.16659 12.8128 4.84369 12.1357C5.52078 11.4586 6.32461 10.9215 7.20927 10.555C8.09394 10.1886 9.04212 10 9.99967 10C10.9572 10 11.9054 10.1886 12.7901 10.555C13.6747 10.9215 14.4786 11.4586 15.1557 12.1357C15.8328 12.8128 16.3699 13.6166 16.7363 14.5013C17.1027 15.3859 17.2913 16.3341 17.2913 17.2917V18.3333"/>
+							<path d="M9.99967 9.9974C11.1047 9.9974 12.1646 9.55841 12.946 8.77701C13.7274 7.99561 14.1663 6.9358 14.1663 5.83073C14.1663 4.72566 13.7274 3.66585 12.946 2.88445C12.1646 2.10305 11.1047 1.66406 9.99967 1.66406C8.89461 1.66406 7.8348 2.10305 7.0534 2.88445C6.27199 3.66585 5.83301 4.72566 5.83301 5.83073C5.83301 6.9358 6.27199 7.99561 7.0534 8.77701C7.8348 9.55841 8.89461 9.9974 9.99967 9.9974Z"/>
+						</svg>
+					</i>
+					<input class="input" type="text" name="name" placeholder="Your name" required>
+				</div>
+				<div class="input-base form__input">
+					<i class="icon">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="#B8BBBE" xmlns="http://www.w3.org/2000/svg">
+							<path d="M18.3327 5.94922V14.2826C18.3327 14.8351 18.1132 15.365 17.7225 15.7557C17.3318 16.1464 16.8019 16.3659 16.2493 16.3659H3.74935C3.19681 16.3659 2.66691 16.1464 2.27621 15.7557C1.88551 15.365 1.66602 14.8351 1.66602 14.2826V5.94922"/>
+							<path d="M16.249 3.2168C16.9738 3.2168 17.6691 3.50518 18.1816 4.01758C18.6942 4.5301 18.9823 5.22539 18.9824 5.9502C18.9824 6.17441 18.8669 6.3832 18.6768 6.50195L11.4482 11.0156C11.0138 11.2871 10.5113 11.4307 9.99902 11.4307C9.55092 11.4306 9.11079 11.3207 8.7168 11.1113L8.55078 11.0156L1.32129 6.50195C1.13128 6.38317 1.01562 6.17429 1.01562 5.9502C1.01571 5.22539 1.30388 4.5301 1.81641 4.01758C2.32893 3.50506 3.02422 3.21688 3.74902 3.2168H16.249Z" stroke="#F9F9F9" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</i>
+					<input class="input" type="email" name="email" placeholder="Your email">
+				</div>
+				<div class="input-base form__input">
+					<i class="icon">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="#B8BBBE" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.1253 1.66797H6.87533C5.72473 1.66797 4.79199 2.60071 4.79199 3.7513V16.2513C4.79199 17.4019 5.72473 18.3346 6.87533 18.3346H13.1253C14.2759 18.3346 15.2087 17.4019 15.2087 16.2513V3.7513C15.2087 2.60071 14.2759 1.66797 13.1253 1.66797Z"/>
+							<line x1="8.79116" y1="14.8524" x2="11.21" y2="14.8524" fill="none" stroke="#F9F9F9" stroke-width="1.70146" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</i>
+					<input class="input" type="tel" name="phone" placeholder="Your phone" required>
+				</div>
+				<div class="input-base form__input">
+					<i class="icon"></i>
+					<input class="input" type="text" name="company-name" placeholder="Company name" required>
+				</div>
+				<div class="input-base form__input">
+					<i class="icon"></i>
+					<span class="field-static-label">Country of business registration</span>
+					<select class="input" name="country-registration" required>
+						{countries.map((c) => (
+							<option value={c.name} data-iso2={c.iso2} selected={c.iso2 === 'vn'}>{c.name}</option>
+						))}
+					</select>
+				</div>
+				<div class="input-base form__input">
+					<textarea class="textarea" name="message" placeholder="Your message"></textarea>
+				</div>
+				<button type="submit" class="btn btn_second form__btn">
+					<div class="btn__text">
+						<div class="btn__text-up">{button_text}</div>
+						<div class="btn__text-static">{button_text}</div>
+					</div>
+					<div class="btn__bg"></div>
+				</button>
+				<label class="input-checkbox form__checkbox">
+					<input type="checkbox" required><span class="input"></span><span class="text">I agree to the <a href="/privacy-policy">privacy policy</a> regarding the processing of personal data</span>
+				</label>
+				<label class="input-checkbox form__checkbox">
+					<input type="checkbox"><span class="input"></span><span class="text">I agree to receive information about the company's products and services</span>
+				</label>
+				<div class="form__message"></div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- Modal 2: Connect High Pay Fin -->
+<div class="modal" id="connect-high-pay-fin">
+	<div class="modal__wrapper">
+		<div class="modal__shadow"></div>
+		<div class="form-modal modal__content">
+			<button class="modal__close" aria-label="Close modal">
+				<div class="modal__close-icon"></div>
+			</button>
+			<div class="form-modal__title">Connect to High Pay Fin</div>
+			<div class="form-modal__text">Start accepting global payments tomorrow</div>
+			<form class="form form-modal__form gsap-fade">
+				<input type="hidden" name="subject" value="Connect to High Pay Fin - popup">
+				<div class="input-base form__input">
+					<i class="icon">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="#B8BBBE" xmlns="http://www.w3.org/2000/svg">
+							<path d="M2.70801 18.3333V17.2917C2.70801 16.3341 2.89661 15.3859 3.26305 14.5013C3.62949 13.6166 4.16659 12.8128 4.84369 12.1357C5.52078 11.4586 6.32461 10.9215 7.20927 10.555C8.09394 10.1886 9.04212 10 9.99967 10C10.9572 10 11.9054 10.1886 12.7901 10.555C13.6747 10.9215 14.4786 11.4586 15.1557 12.1357C15.8328 12.8128 16.3699 13.6166 16.7363 14.5013C17.1027 15.3859 17.2913 16.3341 17.2913 17.2917V18.3333"/>
+							<path d="M9.99967 9.9974C11.1047 9.9974 12.1646 9.55841 12.946 8.77701C13.7274 7.99561 14.1663 6.9358 14.1663 5.83073C14.1663 4.72566 13.7274 3.66585 12.946 2.88445C12.1646 2.10305 11.1047 1.66406 9.99967 1.66406C8.89461 1.66406 7.8348 2.10305 7.0534 2.88445C6.27199 3.66585 5.83301 4.72566 5.83301 5.83073C5.83301 6.9358 6.27199 7.99561 7.0534 8.77701C7.8348 9.55841 8.89461 9.9974 9.99967 9.9974Z"/>
+						</svg>
+					</i>
+					<input class="input" type="text" name="name" placeholder="Your name" required>
+				</div>
+				<div class="input-base form__input">
+					<i class="icon">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="#B8BBBE" xmlns="http://www.w3.org/2000/svg">
+							<path d="M18.3327 5.94922V14.2826C18.3327 14.8351 18.1132 15.365 17.7225 15.7557C17.3318 16.1464 16.8019 16.3659 16.2493 16.3659H3.74935C3.19681 16.3659 2.66691 16.1464 2.27621 15.7557C1.88551 15.365 1.66602 14.8351 1.66602 14.2826V5.94922"/>
+							<path d="M16.249 3.2168C16.9738 3.2168 17.6691 3.50518 18.1816 4.01758C18.6942 4.5301 18.9823 5.22539 18.9824 5.9502C18.9824 6.17441 18.8669 6.3832 18.6768 6.50195L11.4482 11.0156C11.0138 11.2871 10.5113 11.4307 9.99902 11.4307C9.55092 11.4306 9.11079 11.3207 8.7168 11.1113L8.55078 11.0156L1.32129 6.50195C1.13128 6.38317 1.01562 6.17429 1.01562 5.9502C1.01571 5.22539 1.30388 4.5301 1.81641 4.01758C2.32893 3.50506 3.02422 3.21688 3.74902 3.2168H16.249Z" stroke="#F9F9F9" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</i>
+					<input class="input" type="email" name="email" placeholder="Your email">
+				</div>
+				<div class="input-base form__input">
+					<i class="icon">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="#B8BBBE" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.1253 1.66797H6.87533C5.72473 1.66797 4.79199 2.60071 4.79199 3.7513V16.2513C4.79199 17.4019 5.72473 18.3346 6.87533 18.3346H13.1253C14.2759 18.3346 15.2087 17.4019 15.2087 16.2513V3.7513C15.2087 2.60071 14.2759 1.66797 13.1253 1.66797Z"/>
+							<line x1="8.79116" y1="14.8524" x2="11.21" y2="14.8524" fill="none" stroke="#F9F9F9" stroke-width="1.70146" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</i>
+					<input class="input" type="tel" name="phone" placeholder="Your phone" required>
+				</div>
+				<div class="input-base form__input">
+					<i class="icon"></i>
+					<input class="input" type="text" name="company-name" placeholder="Company name" required>
+				</div>
+				<div class="input-base form__input">
+					<i class="icon"></i>
+					<span class="field-static-label">Country of business registration</span>
+					<select class="input" name="country-registration" required>
+						{countries.map((c) => (
+							<option value={c.name} data-iso2={c.iso2} selected={c.iso2 === 'vn'}>{c.name}</option>
+						))}
+					</select>
+				</div>
+				<div class="input-base form__input">
+					<textarea class="textarea" name="message" placeholder="Your message"></textarea>
+				</div>
+				<button type="submit" class="btn btn_second form__btn">
+					<div class="btn__text">
+						<div class="btn__text-up">Submit Request</div>
+						<div class="btn__text-static">Submit Request</div>
+					</div>
+					<div class="btn__bg"></div>
+				</button>
+				<label class="input-checkbox form__checkbox">
+					<input type="checkbox" required><span class="input"></span><span class="text">I agree to the <a href="/privacy-policy">privacy policy</a> regarding the processing of personal data</span>
+				</label>
+				<label class="input-checkbox form__checkbox">
+					<input type="checkbox"><span class="input"></span><span class="text">I agree to receive information about the company's products and services</span>
+				</label>
+				<div class="form__message"></div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- Modal 3: Payment Model Scheme -->
+<div class="modal" id="payment-model">
+	<div class="modal__wrapper">
+		<div class="modal__shadow"></div>
+		<div class="form-modal modal__content">
+			<button class="modal__close" aria-label="Close modal">
+				<div class="modal__close-icon"></div>
+			</button>
+			<div class="form-modal__title">Discuss<br>Payment Model</div>
+			<div class="form-modal__text">Start accepting global payments tomorrow</div>
+			<form class="form form-modal__form gsap-fade">
+				<input type="hidden" name="subject" value="Discuss Payment Model - popup">
+				<div class="input-base form__input">
+					<i class="icon">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="#B8BBBE" xmlns="http://www.w3.org/2000/svg">
+							<path d="M2.70801 18.3333V17.2917C2.70801 16.3341 2.89661 15.3859 3.26305 14.5013C3.62949 13.6166 4.16659 12.8128 4.84369 12.1357C5.52078 11.4586 6.32461 10.9215 7.20927 10.555C8.09394 10.1886 9.04212 10 9.99967 10C10.9572 10 11.9054 10.1886 12.7901 10.555C13.6747 10.9215 14.4786 11.4586 15.1557 12.1357C15.8328 12.8128 16.3699 13.6166 16.7363 14.5013C17.1027 15.3859 17.2913 16.3341 17.2913 17.2917V18.3333"/>
+							<path d="M9.99967 9.9974C11.1047 9.9974 12.1646 9.55841 12.946 8.77701C13.7274 7.99561 14.1663 6.9358 14.1663 5.83073C14.1663 4.72566 13.7274 3.66585 12.946 2.88445C12.1646 2.10305 11.1047 1.66406 9.99967 1.66406C8.89461 1.66406 7.8348 2.10305 7.0534 2.88445C6.27199 3.66585 5.83301 4.72566 5.83301 5.83073C5.83301 6.9358 6.27199 7.99561 7.0534 8.77701C7.8348 9.55841 8.89461 9.9974 9.99967 9.9974Z"/>
+						</svg>
+					</i>
+					<input class="input" type="text" name="name" placeholder="Your name" required>
+				</div>
+				<div class="input-base form__input">
+					<i class="icon">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="#B8BBBE" xmlns="http://www.w3.org/2000/svg">
+							<path d="M18.3327 5.94922V14.2826C18.3327 14.8351 18.1132 15.365 17.7225 15.7557C17.3318 16.1464 16.8019 16.3659 16.2493 16.3659H3.74935C3.19681 16.3659 2.66691 16.1464 2.27621 15.7557C1.88551 15.365 1.66602 14.8351 1.66602 14.2826V5.94922"/>
+							<path d="M16.249 3.2168C16.9738 3.2168 17.6691 3.50518 18.1816 4.01758C18.6942 4.5301 18.9823 5.22539 18.9824 5.9502C18.9824 6.17441 18.8669 6.3832 18.6768 6.50195L11.4482 11.0156C11.0138 11.2871 10.5113 11.4307 9.99902 11.4307C9.55092 11.4306 9.11079 11.3207 8.7168 11.1113L8.55078 11.0156L1.32129 6.50195C1.13128 6.38317 1.01562 6.17429 1.01562 5.9502C1.01571 5.22539 1.30388 4.5301 1.81641 4.01758C2.32893 3.50506 3.02422 3.21688 3.74902 3.2168H16.249Z" stroke="#F9F9F9" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</i>
+					<input class="input" type="email" name="email" placeholder="Your email">
+				</div>
+				<div class="input-base form__input">
+					<i class="icon">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="#B8BBBE" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.1253 1.66797H6.87533C5.72473 1.66797 4.79199 2.60071 4.79199 3.7513V16.2513C4.79199 17.4019 5.72473 18.3346 6.87533 18.3346H13.1253C14.2759 18.3346 15.2087 17.4019 15.2087 16.2513V3.7513C15.2087 2.60071 14.2759 1.66797 13.1253 1.66797Z"/>
+							<line x1="8.79116" y1="14.8524" x2="11.21" y2="14.8524" fill="none" stroke="#F9F9F9" stroke-width="1.70146" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</i>
+					<input class="input" type="tel" name="phone" placeholder="Your phone" required>
+				</div>
+				<div class="input-base form__input">
+					<i class="icon"></i>
+					<input class="input" type="text" name="company-name" placeholder="Company name" required>
+				</div>
+				<div class="input-base form__input">
+					<i class="icon"></i>
+					<span class="field-static-label">Country of business registration</span>
+					<select class="input" name="country-registration" required>
+						{countries.map((c) => (
+							<option value={c.name} data-iso2={c.iso2} selected={c.iso2 === 'vn'}>{c.name}</option>
+						))}
+					</select>
+				</div>
+				<div class="input-base form__input">
+					<textarea class="textarea" name="message" placeholder="Your message"></textarea>
+				</div>
+				<button type="submit" class="btn btn_second form__btn">
+					<div class="btn__text">
+						<div class="btn__text-up">Submit Request</div>
+						<div class="btn__text-static">Submit Request</div>
+					</div>
+					<div class="btn__bg"></div>
+				</button>
+				<label class="input-checkbox form__checkbox">
+					<input type="checkbox" required><span class="input"></span><span class="text">I agree to the <a href="/privacy-policy">privacy policy</a> regarding the processing of personal data</span>
+				</label>
+				<label class="input-checkbox form__checkbox">
+					<input type="checkbox"><span class="input"></span><span class="text">I agree to receive information about the company's products and services</span>
+				</label>
+				<div class="form__message"></div>
+			</form>
+		</div>
+	</div>
+</div>

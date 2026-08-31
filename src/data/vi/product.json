@@ -1,0 +1,26 @@
+{
+  "enabled": true,
+  "title": "Hạ tầng thanh toán đa tiền tệ hợp nhất cho doanh nghiệp toàn cầu",
+  "client_cards": [
+    {
+      "title": "Khách hàng Toàn cầu",
+      "subtitle": ""
+    },
+    {
+      "title": "Đa Tiền tệ (VND/KRW/USD/...)",
+      "subtitle": ""
+    },
+    {
+      "title": "Thẻ & Chuyển khoản Ngân hàng",
+      "subtitle": ""
+    },
+    {
+      "title": "QR Tức thì & Cổng Nội địa",
+      "subtitle": ""
+    }
+  ],
+  "provider_title": "HighPayFin - Cổng Thanh Toán",
+  "provider_tags": "Thu Hộ Toàn Cầu • Ngoại Hối Đa Tiền Tệ • Tuân Thủ & AML • Quyết Toán Tức Thì",
+  "business_title": "Doanh nghiệp Quốc tế",
+  "settlement_title": "Quyết toán Thành công"
+}

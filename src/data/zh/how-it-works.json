@@ -1,0 +1,30 @@
+{
+  "enabled": true,
+  "title": "运作流程",
+  "subtitle": "从多币种账单生成到本币即时结算——只需短短数分钟",
+  "steps": [
+    {
+      "step_label": "第一步",
+      "image_desktop": "/assets/uploads/2026/07/step-1_white.png",
+      "image_mobile": "/assets/uploads/2026/07/step-1_white_mobile.png",
+      "title": "商户创建多币种账单",
+      "description": "在商户管理后台输入您期望收到的金额（VND、KRW、THB、AED 等任意币种），系统秒级自动生成专属动态支付链接与二维码。"
+    },
+    {
+      "step_label": "第二步",
+      "image_desktop": "/assets/uploads/2026/07/step-2_white.png",
+      "image_mobile": "/assets/uploads/2026/07/step-2_white_mobile.png",
+      "title": "客户使用本币便捷付款",
+      "description": "海外客户通过其熟悉的本地手机银行 App、信用卡、本地二维码或网银快速付款，结账体验毫无阻碍。"
+    },
+    {
+      "step_label": "第三步",
+      "image_desktop": "/assets/uploads/2026/07/step-3_white.png",
+      "image_mobile": "/assets/uploads/2026/07/step-3_white_mobile.png",
+      "title": "商户即时获取资金结算",
+      "description": "客户完成付款后资金立即入账，并根据您的资金管理规则自动结算为您指定的币种（VND、KRW、USDT 等）。"
+    }
+  ],
+  "notice_desktop": "汇率锁定 30 分钟：客户按屏幕显示金额准确付款，商户完全免受外汇波动风险",
+  "notice_mobile": "汇率锁定 30 分钟，有效保护您的跨境交易免受市场大幅波动影响"
+}

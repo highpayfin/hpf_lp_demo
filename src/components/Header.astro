@@ -1,0 +1,84 @@
+---
+// Header component
+import { getI18nData, LANGUAGES, type SupportedLang } from '../utils/i18n';
+
+interface Props {
+  lang?: SupportedLang;
+}
+
+const { lang = 'en' } = Astro.props;
+const siteConfig = getI18nData(lang, 'site-config');
+
+const {
+  phone = "+375 (44) 7788879",
+  phone_link = "tel:+375447788879",
+  header_cta_text = "Get a Consultation",
+  menu_items = [
+    { title: "Product", url: "#product" },
+    { title: "How It Works", url: "#whats-work" },
+    { title: "Advantages", url: "#advantages" },
+    { title: "Who It’s For", url: "#for-whom" },
+    { title: "FAQ", url: "#faq" }
+  ]
+} = siteConfig;
+
+const currentLang = LANGUAGES.find((l) => l.code === lang) || LANGUAGES[0];
+const otherLangs = LANGUAGES.filter((l) => l.code !== lang);
+---
+<header class="header animation">
+  <div class="container header__container">
+    <div class="header__wrapper">
+      <a class="logo header__logo" href={lang === 'en' ? '/#title' : `/${lang}/#title`}>
+        <img src="/assets/uploads/2026/02/logo.svg" alt="High Pay Fin">
+      </a>
+      <div class="header__nav">
+        <ul>
+          {menu_items.map((item) => (
+            <li class="menu-item menu-item-type-custom">
+              <a href={item.url}>{item.title}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div class="header__phone">
+        <div class="dropdown">
+          <button class="dropdown__button">
+            <a href={phone_link || `tel:${phone.replace(/\D/g, '')}`}>{phone}</a>
+          </button>
+        </div>
+      </div>
+      <div class="header__lang">
+        <div class="dropdown">
+          <button class="dropdown__button" aria-label="Select language">
+            <div class="lang">
+              <img src={currentLang.flag} alt={currentLang.name}>
+              <span class="desktop">{currentLang.name}</span>
+            </div>
+            <i class="icon">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.84933 8.5C4.98837 8.5 5.12192 8.44173 5.21652 8.33984L9.06613 4.19434C9.25403 3.99198 9.24212 3.67521 9.03976 3.4873C8.83745 3.29962 8.52157 3.3115 8.33371 3.51367L4.84933 7.26562L1.36594 3.51367C1.17811 3.31146 0.86223 3.29968 0.659882 3.4873C0.457526 3.67521 0.445613 3.99198 0.633515 4.19434L4.48312 8.33984C4.57764 8.44163 4.71045 8.49989 4.84933 8.5Z" />
+              </svg>
+            </i>
+          </button>
+          <div class="dropdown__content">
+            {otherLangs.map((item) => (
+              <a href={item.path} class="lang-option">
+                <img src={item.flag} alt={item.name}>
+                <span class="desktop">{item.name}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+      
+      <button class="btn btn_small header__btn" modal="contact-form">
+        <div class="btn__text">
+          <div class="btn__text-up">{header_cta_text}</div>
+          <div class="btn__text-static">{header_cta_text}</div>
+        </div>
+        <div class="btn__bg"></div>
+      </button>
+      <button class="menu-burger" aria-label="Toggle menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>

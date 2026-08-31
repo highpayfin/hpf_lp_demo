@@ -1,0 +1,84 @@
+---
+import { getI18nData, type SupportedLang } from '../utils/i18n';
+interface Props {
+  lang?: SupportedLang;
+}
+const { lang = 'en' } = Astro.props;
+const advantagesData = getI18nData(lang, 'advantages');
+// Section: Advantages
+
+
+const {
+  enabled = true,
+  title_prefix = "Where High Pay Fin",
+  title_middle = "becomes",
+  title_suffix = "your",
+  highlight_text = "powers global growth",
+  subtitle = "When clients from Russia pay in rubles, and you receive settlement in your preferred currency",
+  flags = [
+    { name: "South Africa", image: "/assets/img/SouthAfrica.webp" },
+    { name: "South Korea", image: "/assets/img/SouthKorea.webp" },
+    { name: "Thailand", image: "/assets/img/Thailand.webp" },
+    { name: "Vietnam", image: "/assets/img/Vietnam.webp" }
+  ],
+  industries = []
+} = advantagesData;
+---
+
+{enabled !== false && (
+  <section class="block block-advantages">
+  <div class="container">
+    <div class="title-block title-block_centered desktop">
+      <h2 class="title">
+        <p>
+          <span>{title_prefix} </span>
+          <span class="flags">
+            {flags.map((f) => (
+              <img src={f.image} alt={f.name}>
+            ))}
+          </span>
+          {title_middle && <span> {title_middle}</span>}<br />
+          {title_suffix && <span>{title_suffix} </span>}<span class="color-purple">{highlight_text}</span>
+        </p>
+      </h2>
+      <div class="text-large description"><p>{subtitle}</p></div>
+    </div>
+
+    <div class="title-block mobile">
+      <h2 class="title">
+        <p>
+          {title_prefix}
+          <span class="flags">
+            {flags.map((f) => (
+              <img src={f.image} alt={f.name}>
+            ))}
+          </span><br />
+          {title_middle && <>{title_middle} </>}
+          {title_suffix && <>{title_suffix} </>}
+          <span class="color-purple">{highlight_text}</span>
+        </p>
+      </h2>
+    </div>
+
+    <div class="advantages desktop">
+      {industries.map((item, idx) => (
+        <div class="advantage" gsap-card="advantages-row-1">
+          <img class="advantage__image" src={item.icon} alt={item.title}>
+          <h5 class="h5 advantage__title"><p>{item.title}</p></h5>
+          <div class="advantage__text"><p set:html={item.text.replace(/\n/g, '<br />')} /></div>
+        </div>
+      ))}
+    </div>
+
+    <div class="advantages mobile">
+      {industries.map((item, idx) => (
+        <div class="advantage" gsap-card="advantages-row-1">
+          <img class="advantage__image" src={item.icon} alt={item.title}>
+          <h5 class="h5 advantage__title"><p>{item.title}</p></h5>
+          <div class="advantage__text"><p set:html={item.text.replace(/\n/g, '<br />')} /></div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+)}

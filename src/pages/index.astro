@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import Partners from '../components/Partners.astro';
+import DontPay from '../components/DontPay.astro';
+import Product from '../components/Product.astro';
+import WhoAreWe from '../components/WhoAreWe.astro';
+import HowItWorks from '../components/HowItWorks.astro';
+import Advantages from '../components/Advantages.astro';
+import Practicals from '../components/Practicals.astro';
+import WhoItsFor from '../components/WhoItsFor.astro';
+import ConnectSteps from '../components/ConnectSteps.astro';
+import Trust from '../components/Trust.astro';
+import Faq from '../components/Faq.astro';
+import ContactForm from '../components/ContactForm.astro';
+import CustomSection from '../components/CustomSection.astro';
+import { getI18nData } from '../utils/i18n';
+
+const siteConfig = getI18nData('en', 'site-config');
+---
+
+<BaseLayout title={siteConfig.meta_title} description={siteConfig.meta_description} lang="en">
+  <main class="main main_no-padding page-main">
+    <div class="block-title-composition-trigger">
+      <Hero lang="en" />
+    </div>
+    <Partners lang="en" />
+    <DontPay lang="en" />
+    <Product lang="en" />
+    <WhoAreWe lang="en" />
+    <HowItWorks lang="en" />
+    <Advantages lang="en" />
+    <Practicals lang="en" />
+    <WhoItsFor lang="en" />
+    <CustomSection lang="en" position="all" />
+    <ConnectSteps lang="en" />
+    <Trust lang="en" />
+    <Faq lang="en" />
+    <ContactForm lang="en" />
+  </main>
+</BaseLayout>

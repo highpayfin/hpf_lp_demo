@@ -1,0 +1,22 @@
+{
+  "enabled": true,
+  "title": "단 3단계로 간편한 연동",
+  "subtitle": "글로벌 크로스보더 기업을 위한 신속한 디지털 온보딩",
+  "steps": [
+    {
+      "color": "violet",
+      "icon": "/assets/uploads/2026/05/connect-1.svg",
+      "title": "온보딩 신청서 제출 및 전자 계약 체결"
+    },
+    {
+      "color": "green",
+      "icon": "/assets/uploads/2026/05/connect-2.svg",
+      "title": "다중 통화 대시보드 계정 발급"
+    },
+    {
+      "color": "violet",
+      "icon": "/assets/uploads/2026/05/connect-3.svg",
+      "title": "전 세계 고객 대상 다중 통화 결제 수납 시작"
+    }
+  ]
+}

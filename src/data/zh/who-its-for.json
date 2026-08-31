@@ -1,0 +1,88 @@
+{
+  "enabled": true,
+  "tabs": [
+    {
+      "id": "owners",
+      "tab_label": "面向企业主",
+      "title": "全面掌控全球商业资金版图",
+      "image_desktop": "/assets/uploads/2026/02/macbook-1.webp",
+      "image_mobile": "/assets/uploads/2026/02/macbook-1_mobile.webp",
+      "features": [
+        {
+          "title": "统一多币种资金总账",
+          "text": "全盘汇总全球所有交易、支付链接与应收账款，清晰掌握全局资金"
+        },
+        {
+          "title": "全球营收与外汇数据分析",
+          "text": "支持按国家、货币对、支付渠道与业务员进行实时深度多维筛选"
+        },
+        {
+          "title": "自动化资金划拨与结算",
+          "text": "灵活配置自动划拨规则，按需结算至公司银行账户或多币种钱包"
+        },
+        {
+          "title": "一键导出审计级财务报表",
+          "text": "即时生成符合国际会计审计标准的 XLS/CSV 明细报表"
+        },
+        {
+          "title": "精细化团队权限分配",
+          "text": "安全授权销售人员开具账单，同时牢牢把控企业核心财资安全"
+        },
+        {
+          "title": "完备的付款人合规追溯",
+          "text": "每笔交易均完整保留付款人身份信息与反洗钱合规元数据"
+        }
+      ]
+    },
+    {
+      "id": "managers",
+      "tab_label": "面向业务主管",
+      "title": "助力业务更快成单的账单工具",
+      "image_desktop": "/assets/uploads/2026/02/macbook-2.webp",
+      "image_mobile": "/assets/uploads/2026/02/macbook-2_mobile.webp",
+      "features": [
+        {
+          "title": "10 秒生成专属账单与二维码",
+          "text": "秒级开具客户本币计价的付款账单，无需任何硬件设备"
+        },
+        {
+          "title": "实时跟踪每笔交易状态",
+          "text": "待付款 / 已支付 / 已过期状态清晰可见，绝不错失任何一位高意向买家"
+        },
+        {
+          "title": "即时到账提醒与确认",
+          "text": "客户完成付款的瞬间，业务端即刻收到绿灯成功通知"
+        },
+        {
+          "title": "完美适配高频大客流业务",
+          "text": "非常适合跨境零售、酒店旅游、专业咨询、租车出行及高端定制服务"
+        }
+      ]
+    },
+    {
+      "id": "clients",
+      "tab_label": "面向终端客户",
+      "title": "顺畅无阻的本地化付款体验",
+      "image_desktop": "/assets/uploads/2026/02/iphone-1.webp",
+      "image_mobile": "/assets/uploads/2026/02/iphone-1_mobile.webp",
+      "features": [
+        {
+          "title": "使用熟悉的本地货币支付",
+          "text": "客户直接使用常用的手机银行 App、信用卡或本地网银以本币轻松结账。"
+        },
+        {
+          "title": "零额外扣费，无隐藏陷阱",
+          "text": "锁定汇率，公开透明——账单所见即所得，银行账单绝无意外扣款。"
+        },
+        {
+          "title": "数秒内即可完成确认",
+          "text": "扫码或点击链接 → 指纹/人脸生物识别或银行验证 → 迅速完成。"
+        },
+        {
+          "title": "即时获取电子交易凭单",
+          "text": "支付成功后屏幕立即显示官方认证凭据与电子收据。"
+        }
+      ]
+    }
+  ]
+}

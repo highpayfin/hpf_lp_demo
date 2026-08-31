@@ -1,0 +1,32 @@
+{
+  "menu_items": [
+    {
+      "title": "Product",
+      "url": "/#product"
+    },
+    {
+      "title": "How It Works",
+      "url": "/#whats-work"
+    },
+    {
+      "title": "Advantages",
+      "url": "/#advantages"
+    },
+    {
+      "title": "Who It’s For",
+      "url": "/#for-whom"
+    },
+    {
+      "title": "FAQ",
+      "url": "/#faq"
+    }
+  ],
+  "meta_description": "Empowering international businesses to accept 50+ fiat currencies and digital assets globally with instant settlement, low fees, and full regulatory compliance.",
+  "site_name": "High Pay Fin",
+  "phone_link": " ",
+  "phone": " ",
+  "header_cta_text": "Get a Consultation",
+  "telegram_url": "https://t.me/highpayfin",
+  "email": "info@highpayfin.com",
+  "meta_title": "High Pay Fin - Global Multi-Currency Payment Infrastructure"
+}

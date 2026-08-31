@@ -1,0 +1,32 @@
+{
+  "menu_items": [
+    {
+      "title": "产品介绍",
+      "url": "/zh/#product"
+    },
+    {
+      "title": "运作方式",
+      "url": "/zh/#whats-work"
+    },
+    {
+      "title": "核心优势",
+      "url": "/zh/#advantages"
+    },
+    {
+      "title": "适用群体",
+      "url": "/zh/#for-whom"
+    },
+    {
+      "title": "常见问题",
+      "url": "/zh/#faq"
+    }
+  ],
+  "meta_description": "为跨国出海企业打造的全球多币种支付解决方案。支持50+种法定货币与数字资产，即时结算，超低费率，完全合规。",
+  "site_name": "High Pay Fin",
+  "phone_link": " ",
+  "phone": " ",
+  "header_cta_text": "获取咨询",
+  "telegram_url": "https://t.me/highpayfin",
+  "email": "info@highpayfin.com",
+  "meta_title": "High Pay Fin - 全球多币种跨境支付基础设施"
+}

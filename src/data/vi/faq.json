@@ -1,0 +1,46 @@
+{
+  "enabled": true,
+  "title": "Câu hỏi thường gặp",
+  "questions": [
+    {
+      "question": "Thời gian thiết lập tài khoản doanh nghiệp mất bao lâu?",
+      "answer": "Thông thường quá trình thiết lập và xác minh KYC mất không quá 24 giờ sau khi cung cấp đầy đủ giấy tờ doanh nghiệp.\nChúng tôi tối ưu quy trình nhanh chóng và minh bạch — ký hợp đồng trực tuyến, thiết lập quy tắc quyết toán và bắt đầu nhận thanh toán quốc tế ngay ngày hôm sau."
+    },
+    {
+      "question": "Khách hàng quốc tế thực hiện thanh toán như thế nào?",
+      "answer": "Khách hàng thanh toán bằng đồng tiền bản địa của họ qua các phương thức quen thuộc bao gồm chuyển khoản ngân hàng nội địa, quét mã QR tức thì, thẻ ghi nợ/tín dụng hoặc ví điện tử. Không cần cài đặt ứng dụng mới hay thực hiện đăng ký phức tạp."
+    },
+    {
+      "question": "Tôi có thể nhận quyết toán bằng những loại tiền tệ nào?",
+      "answer": "Bạn có thể nhận tiền bằng KRW, AED, VND, THB hoặc USDT — tùy chỉnh linh hoạt trực tiếp theo tài khoản doanh nghiệp của bạn. Khách hàng của bạn có thể thanh toán bằng nhiều loại tiền tệ địa phương trên khắp thế giới."
+    },
+    {
+      "question": "Có bất kỳ khoản phí ẩn hay phụ phí giao dịch quốc tế nào không?",
+      "answer": "Không. Toàn bộ chi phí chuyển đổi ngoại hối được thể hiện minh bạch trong tỷ giá thanh toán. Khách hàng thấy chính xác số tiền cuối cùng trước khi trả, và doanh nghiệp của bạn nhận đủ 100% số tiền hóa đơn mà không bị trừ các khoản phí bất ngờ."
+    },
+    {
+      "question": "Chi phí tích hợp và cài đặt ban đầu là bao nhiêu?",
+      "answer": "Quá trình tích hợp hoàn toàn miễn phí — 0 phí cài đặt, 0 phí duy trì hàng tháng và không yêu cầu cam kết doanh số tối thiểu. Bạn chỉ trả mức phí cạnh tranh dựa trên khối lượng giao dịch thực tế."
+    },
+    {
+      "question": "Hạ tầng thanh toán có an toàn và tuân thủ pháp lý không?",
+      "answer": "Có. Mọi giao dịch đều được định tuyến qua các tổ chức tài chính được cấp phép với mã hóa đầu cuối, chứng chỉ bảo mật PCI-DSS Level 1 cao nhất và hệ thống chống gian lận/AML tự động.\n\nHigh Pay Fin hoạt động nghiêm ngặt trong các khuôn khổ tài chính được cấp phép và tuân thủ các quy định quốc tế."
+    },
+    {
+      "question": "Cần những giấy tờ gì để bắt đầu kích hoạt tài khoản?",
+      "answer": "Bạn cần cung cấp giấy phép đăng ký kinh doanh, giấy tờ tùy thân của người đại diện pháp luật, chứng từ xác minh địa chỉ trụ sở và thông tin tài khoản ngân hàng để nhận quyết toán. Chuyên viên của chúng tôi sẽ hướng dẫn bạn qua cổng xác thực kỹ thuật số."
+    },
+    {
+      "question": "Tôi có thể theo dõi giao dịch thời gian thực và xuất báo cáo tài chính không?",
+      "answer": "Có. Bảng điều khiển doanh nghiệp cung cấp dữ liệu giao dịch trực tiếp theo thời gian thực, bộ lọc trạng thái, số dư đa tiền tệ và tính năng xuất dữ liệu sang CSV hoặc Excel chỉ bằng một cú nhấp chuột cho bộ phận kế toán và thuế."
+    },
+    {
+      "question": "High Pay Fin phù hợp với những ngành nghề kinh doanh nào?",
+      "answer": "Giải pháp của chúng tôi được thiết kế tối ưu cho mọi doanh nghiệp có khách hàng quốc tế: thương mại điện tử, phần mềm SaaS, du lịch khách sạn, bất động sản, bán buôn xuất nhập khẩu B2B, dịch vụ cao cấp và các đại lý kỹ thuật số."
+    },
+    {
+      "question": "Tỷ giá ngoại hối (FX) được xác định như thế nào?",
+      "answer": "Chúng tôi áp dụng tỷ giá liên ngân hàng theo thời gian thực từ các nhà cung cấp thanh khoản toàn cầu. Tỷ giá được khóa cố định trong suốt phiên thanh toán, giúp bảo vệ bạn và khách hàng khỏi biến động thị trường."
+    }
+  ]
+}

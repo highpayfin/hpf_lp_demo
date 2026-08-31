@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/Hero.astro';
+import Partners from '../../components/Partners.astro';
+import DontPay from '../../components/DontPay.astro';
+import Product from '../../components/Product.astro';
+import WhoAreWe from '../../components/WhoAreWe.astro';
+import HowItWorks from '../../components/HowItWorks.astro';
+import Advantages from '../../components/Advantages.astro';
+import Practicals from '../../components/Practicals.astro';
+import WhoItsFor from '../../components/WhoItsFor.astro';
+import ConnectSteps from '../../components/ConnectSteps.astro';
+import Trust from '../../components/Trust.astro';
+import Faq from '../../components/Faq.astro';
+import ContactForm from '../../components/ContactForm.astro';
+import CustomSection from '../../components/CustomSection.astro';
+import { getI18nData } from '../../utils/i18n';
+
+const siteConfig = getI18nData('ko', 'site-config');
+---
+
+<BaseLayout title={siteConfig.meta_title} description={siteConfig.meta_description} lang="ko">
+  <main class="main main_no-padding page-main">
+    <div class="block-title-composition-trigger">
+      <Hero lang="ko" />
+    </div>
+    <Partners lang="ko" />
+    <DontPay lang="ko" />
+    <Product lang="ko" />
+    <WhoAreWe lang="ko" />
+    <HowItWorks lang="ko" />
+    <Advantages lang="ko" />
+    <Practicals lang="ko" />
+    <WhoItsFor lang="ko" />
+    <CustomSection lang="ko" position="all" />
+    <ConnectSteps lang="ko" />
+    <Trust lang="ko" />
+    <Faq lang="ko" />
+    <ContactForm lang="ko" />
+  </main>
+</BaseLayout>

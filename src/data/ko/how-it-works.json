@@ -1,0 +1,30 @@
+{
+  "enabled": true,
+  "title": "이용 절차",
+  "subtitle": "다중 통화 인보이스 발행부터 현지 정산까지 – 단 몇 분이면 완료됩니다",
+  "steps": [
+    {
+      "step_label": "1단계",
+      "image_desktop": "/assets/uploads/2026/07/step-1_white.png",
+      "image_mobile": "/assets/uploads/2026/07/step-1_white_mobile.png",
+      "title": "기업의 다중 통화 인보이스 생성",
+      "description": "관리자 대시보드에서 수령을 원하는 금액(VND, KRW, THB, AED 등)을 입력하면 즉시 동적 결제 링크와 QR 코드가 생성됩니다."
+    },
+    {
+      "step_label": "2단계",
+      "image_desktop": "/assets/uploads/2026/07/step-2_white.png",
+      "image_mobile": "/assets/uploads/2026/07/step-2_white_mobile.png",
+      "title": "고객의 자국 통화 간편 결제",
+      "description": "고객은 거주 국가의 모바일 뱅킹 앱, 신용카드, QR 코드 또는 계좌이체를 통해 자국 통화로 편리하게 결제합니다."
+    },
+    {
+      "step_label": "3단계",
+      "image_desktop": "/assets/uploads/2026/07/step-3_white.png",
+      "image_mobile": "/assets/uploads/2026/07/step-3_white_mobile.png",
+      "title": "기업 계좌로 실시간 정산 수령",
+      "description": "결제 완료 즉시 자금이 입금되며, 귀사의 자금 규칙에 따라 원하는 통화(VND, KRW, USDT 등)로 정산됩니다."
+    }
+  ],
+  "notice_desktop": "30분간 환율이 고정됩니다: 고객은 화면에 표시된 정확한 금액만 결제하며 환율 변동 위험이 없습니다",
+  "notice_mobile": "30분간 환율이 고정되어 급격한 시장 변동으로부터 거래를 안전하게 보호합니다"
+}
