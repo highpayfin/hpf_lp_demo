@@ -11,6 +11,8 @@ let yaml = `backend:
   name: github
   repo: highpayfin/hpf_lp_demo
   branch: main
+  base_url: https://hpf-lp-demo.pages.dev
+  auth_endpoint: api/auth
 
 local_backend: true
 
